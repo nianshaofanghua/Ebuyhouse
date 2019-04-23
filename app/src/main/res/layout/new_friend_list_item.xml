@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="70dp"
+    android:orientation="vertical">
+
+    <!--just contain two view-->
+    <com.d.lib.slidelayout.SlideLayout
+        android:id="@+id/sl_slide"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/rl"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:background="@color/white">
+
+                <ImageView
+                    android:id="@+id/iv_user"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:src="@mipmap/erro_iamge_fang"/>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="60dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@+id/iv_user"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tv_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="0dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:text="Adhley"
+                        android:textColor="@color/black"
+                        android:textSize="14dp"/>
+
+                    <TextView
+                        android:id="@+id/tv_detail"
+                        android:layout_width="wrap_content"
+                        android:layout_height="0dp"
+                        android:layout_marginBottom="10dp"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:text="Sent message"
+                        android:textColor="@color/text_use_gray"
+                        android:textSize="14dp"/>
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/tv_type"
+                    android:paddingLeft="5dp"
+                    android:paddingBottom="4dp"
+                    android:paddingTop="4dp"
+                    android:paddingRight="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="20dp"
+                    android:text="Verification"
+                    android:textColor="@color/text_use_gray"
+                    android:textSize="14dp"/>
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="60dp"
+            android:layout_height="70dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_delete"
+                android:layout_width="60dp"
+                android:layout_height="match_parent"
+                android:background="#FF3A30"
+                android:gravity="center"
+                android:text="Delete"
+                android:textColor="#fff"
+                android:textSize="14dp"/>
+
+        </LinearLayout>
+
+
+    </com.d.lib.slidelayout.SlideLayout>
+
+
+</LinearLayout>

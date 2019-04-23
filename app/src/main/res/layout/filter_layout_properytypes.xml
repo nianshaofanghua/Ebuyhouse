@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:background="@color/baise"
+    android:id="@+id/filter_layout_propreytypes">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Property Types"
+            android:textColor="@color/text_heise"
+            android:gravity="center_vertical"
+            android:paddingLeft="10dp"/>
+
+        <TextView
+            android:id="@+id/filter_text_properytypes"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:drawablePadding="10dp"
+            android:drawableRight="@mipmap/jiantou_right"
+            android:gravity="right|center_vertical"
+            android:minLines="1"
+            android:paddingRight="10dp"
+            android:text="Apt,Homes,etc."
+            android:textColor="@color/text_hei"/>
+    </LinearLayout>
+
+    <!--<View style="@style/myline_kuan"/>-->
+    <View
+        android:background="@color/line_hui"
+        android:layout_width="match_parent"
+        android:layout_height="4dp"/>
+</LinearLayout>

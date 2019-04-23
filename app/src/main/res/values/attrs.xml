@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="PullToRefresh">
+        <attr name="adapterViewBackground" format="reference|color" />
+        <attr name="headerBackground" format="reference|color" />
+        <attr name="headerTextColor" format="color" />
+        <attr name="mode">
+            <flag name="pullDownFromTop" value="0x1" />
+            <flag name="pullUpFromBottom" value="0x2" />
+            <flag name="both" value="0x3" />
+        </attr>
+    </declare-styleable>
+
+
+    <declare-styleable name="ConvenientBanner">
+        <attr name="canLoop" format="boolean" />
+    </declare-styleable>
+
+
+    <!-- 圆形头像 -->
+    <declare-styleable name="CircleImageView">
+        <attr name="border_width" format="dimension" />
+        <attr name="border_color" format="color" />
+    </declare-styleable>
+
+
+    <declare-styleable name="SlidingLayout">
+        <attr name="background_view" format="reference"/>
+        <attr name="sliding_mode" format="enum">
+            <enum name="both" value="0"/>
+            <enum name="top" value="1"/>
+            <enum name="bottom" value="2"/>
+        </attr>
+        <attr name="sliding_pointer_mode" format="enum">
+            <enum name="one" value="0"/>
+            <enum name="more" value="1"/>
+        </attr>
+        <attr name="top_max" format="dimension"/>
+    </declare-styleable>
+
+
+
+    <declare-styleable name="ArcProgress">
+        <attr name="arc_progress" format="integer"/>
+        <attr name="arc_angle" format="float"/>
+        <attr name="arc_stroke_width" format="dimension"/>
+        <attr name="arc_max" format="integer"/>
+        <attr name="arc_unfinished_color" format="color"/>
+        <attr name="arc_finished_color" format="color"/>
+        <attr name="arc_text_size" format="dimension"/>
+        <attr name="arc_text_color" format="color"/>
+        <attr name="arc_suffix_text" format="string"/>
+        <attr name="arc_suffix_text_size" format="dimension"/>
+        <attr name="arc_suffix_text_padding" format="dimension"/>
+        <attr name="arc_bottom_text" format="string"/>
+        <attr name="arc_bottom_text_size" format="dimension"/>
+    </declare-styleable>
+
+    <declare-styleable name="CircleProgress">
+        <attr name="circle_progress" format="integer"/>
+        <attr name="circle_max" format="integer"/>
+        <attr name="circle_unfinished_color" format="color"/>
+        <attr name="circle_finished_color" format="color"/>
+        <attr name="circle_text_size" format="dimension"/>
+        <attr name="circle_text_color" format="color"/>
+        <attr name="circle_prefix_text" format="string"/>
+        <attr name="circle_suffix_text" format="string"/>
+
+    </declare-styleable>
+
+
+
+    <declare-styleable name="BubbleView">
+        <attr name="arrowWidth" format="dimension" />
+        <attr name="angle" format="dimension" />
+        <attr name="arrowHeight" format="dimension" />
+        <attr name="arrowPosition" format="dimension" />
+        <attr name="bubbleColor" format="color" />
+        <attr name="arrowLocation" format="enum">
+            <enum name="left" value="0x00" />
+            <enum name="right" value="0x01" />
+            <enum name="top" value="0x02" />
+            <enum name="bottom" value="0x03" />
+        </attr>
+    </declare-styleable>
+
+
+    <!-- 按钮自定义属性 -->
+    <declare-styleable name="StateButton">
+        <!--text color-->
+        <attr name="normalTextColor" format="color|reference" />
+        <attr name="pressedTextColor" format="color|reference" />
+        <attr name="unableTextColor" format="color|reference" />
+
+        <!--stroke width and color, dash width, dash gap-->
+        <attr name="strokeDashWidth" format="dimension|reference" />
+        <attr name="strokeDashGap" format="dimension|reference" />
+        <attr name="normalStrokeWidth" format="dimension|reference" />
+        <attr name="pressedStrokeWidth" format="dimension|reference" />
+        <attr name="unableStrokeWidth" format="dimension|reference" />
+        <attr name="normalStrokeColor" format="color|reference" />
+        <attr name="pressedStrokeColor" format="color|reference" />
+        <attr name="unableStrokeColor" format="color|reference" />
+
+        <!--background color-->
+        <attr name="normalBackgroundColor" format="color|reference" />
+        <attr name="pressedBackgroundColor" format="color|reference" />
+        <attr name="unableBackgroundColor" format="color|reference" />
+
+        <!--background radius-->
+        <attr name="radius" format="dimension|reference" />
+        <attr name="round" format="boolean|reference" />
+
+        <!--animation duration-->
+        <attr name="animationDuration" format="integer|reference" />
+    </declare-styleable>
+
+
+</resources>

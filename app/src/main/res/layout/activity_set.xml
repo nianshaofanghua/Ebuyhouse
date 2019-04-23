@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:id="@+id/set_yincang"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/baise"
+        android:visibility="gone"/>
+    <include layout="@layout/action_bar_title02"/>
+
+    <com.scwang.smartrefresh.layout.SmartRefreshLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:srlEnablePureScrollMode="true">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <!--清理缓存-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="Clear the cache"
+                    android:textColor="@color/text_heise"
+                    android:paddingLeft="10dp"
+                    android:gravity="center_vertical"/>
+                <TextView
+                    android:id="@+id/set_clear_up"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:text=""
+                    android:textColor="@color/text_hei"
+                    android:drawableRight="@mipmap/jiantou_right"
+                    android:drawablePadding="10dp"
+                    android:paddingRight="10dp"
+                    android:gravity="center_vertical|right"/>
+            </LinearLayout>
+            <View style="@style/myline"/>
+
+
+            <!--版本更新-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="10dp"
+                    android:text="On Ebuyhouse"
+                    android:textColor="@color/text_heise"/>
+                <TextView
+                    android:id="@+id/set_currentversion"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:text=""
+                    android:textColor="@color/text_hei"
+                    android:drawableRight="@mipmap/jiantou_right"
+                    android:drawablePadding="10dp"
+                    android:paddingRight="10dp"
+                    android:gravity="center_vertical|right"/>
+            </LinearLayout>
+            <View style="@style/myline"/>
+
+
+
+         <LinearLayout
+             android:orientation="vertical"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent">
+             <TextView
+                 android:layout_weight="1"
+                 android:id="@+id/clicks"
+                 android:layout_width="match_parent"
+                 android:layout_height="0dp"/>
+             <TextView
+                 android:id="@+id/set_exit"
+                 android:layout_width="match_parent"
+                 android:layout_height="45dp"
+                 android:text="Log  out"
+                 android:gravity="center"
+                 android:textColor="@color/baise"
+                 android:background="@drawable/shape_text_bg_zhutise"
+                 android:layout_margin="30dp" />
+         </LinearLayout>
+        </LinearLayout>
+
+
+    </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+</LinearLayout>

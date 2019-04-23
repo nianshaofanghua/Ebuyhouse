@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="0dp"
+              android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="10dp"
+        android:gravity="center_vertical"
+        android:text="Transcation contract"
+        android:visibility="gone"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/tv_sales"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:drawableLeft="@mipmap/group_chose"
+            android:drawablePadding="10dp"
+            android:gravity="center"
+            android:text="Personal sales"
+            android:textColor="@color/text_red"
+            android:visibility="gone"/>
+
+        <TextView
+            android:id="@+id/tv_entrustment"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="40dp"
+            android:drawableLeft="@mipmap/radio_group_notchose"
+            android:drawablePadding="10dp"
+            android:gravity="center"
+            android:text="Entrustment Ebuyhouse"
+            android:visibility="gone"/>
+    </LinearLayout>
+
+
+</LinearLayout>

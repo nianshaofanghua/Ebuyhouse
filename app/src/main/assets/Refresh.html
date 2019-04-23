@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <style>
+        .top{
+            height:1.2rem;
+        }
+        .top div{
+            width:100%;
+            padding:.3rem;
+            background:#fff;
+            border-bottom:1px solid #F0F0F0;
+            text-align: center;
+            position: fixed;
+            top:0;left:0;
+            z-index: 6;
+        }
+        .top .return{
+            position: absolute;
+            left:.5rem;
+            top:.4rem;
+            display: inline-block;
+            width:.4rem;
+            height:.4rem;
+            border-width:2px;
+            border-bottom-style: solid;
+            border-left-style: solid;
+            border-color: #F85252;
+            text-decoration: none;
+            /* left: 30pt; */
+            transform: rotate(44deg);
+        }
+        .top span{
+            font-size:.5rem;
+        }
+        .center{
+            position: absolute;
+            top:50%;left:50%;
+            z-index:4;
+            text-align: center;
+            transform: translate(-50%, -50%);
+        }
+        p{
+            font-size:.5rem;
+            width:8rem;
+            word-wrap:break-word;
+        }
+        .button{
+			display:inline-block;
+            outline: medium;
+            width:3rem;
+            height:1rem;
+            line-height:1rem;
+            text-align: center;
+            border:0;
+            border-radius:.1rem;
+            background: #F85252;
+            color:#fff;
+            font-size:.45rem;
+        }
+    </style>
+</head>
+<body>
+<div class="top">
+    <div>
+        <a href="javascript:;" class="return" onclick="JsBridge.back()"></a>
+        <span>Refresh</span>
+    </div>
+</div>
+<div class="center">
+    <p>Please check the network, refresh the page</p>
+    <a class="button" onclick="JsBridge.refresh();">Refresh</a>
+</div>
+<script>
+  var JsBridge = function() {
+    var obj = {};
+    obj.refresh = function() {
+        EdanJsBridge.refresh();
+    };
+    obj.back = function() {
+        return EdanJsBridge.back();
+    };
+    return obj;
+  }();
+//    rem转换
+    !function (a) {
+        function b() {
+            var b = c.clientWidth, e = "}";
+            if (!navigator.userAgent.match(/Android|BlackBerry|iPhone|iPad|iPod|Opera Mini|IEMobile/i) && b > 1024) {
+                b = 640;
+                e = ";max-width:" + b + "px;margin-right:auto!important;margin-left:auto!important;}"
+            }
+            a.rem = b / 10;
+            /ZTE U930_TD/.test(navigator.userAgent) && (a.rem = 1.13 * a.rem);
+            /Android\s+4\.4\.4;\s+M351\s/.test(navigator.userAgent) && (a.rem = a.rem / 1.05);
+            a.rem = Math.min(a.rem, 64);
+            d.innerHTML = "html{font-size:" + a.rem + "px!important;}body{font-size:" + 12 * (b / 320) + "px" + e
+        }
+
+        var c = document.documentElement, d = document.createElement("style");
+        c.firstElementChild.appendChild(d);
+        a.addEventListener("resize", function () {
+            b()
+        }, !1);
+        a.addEventListener("pageshow", function (a) {
+            a.persisted && b()
+        }, !1);
+        b()
+    }(window);
+</script>
+</body>
+</html>

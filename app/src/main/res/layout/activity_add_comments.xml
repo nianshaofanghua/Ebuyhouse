@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/line_hui">
+
+    <FrameLayout
+        android:id="@+id/addcomment_yincang"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/baise"
+        android:visibility="gone"/>
+    <include layout="@layout/action_bar_title02"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="@color/baise">
+
+            <EditText
+                android:id="@+id/addcomment_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="100dp"
+                android:background="@drawable/shape_edit_biankuang"
+                android:layout_margin="20dp"
+                android:gravity="top"
+                android:hint="Please fill in your rating"
+                android:textColorHighlight="@color/text_hei"
+                android:textSize="16sp"
+                android:padding="5dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Upload your proof of payment before you can comment "
+                android:layout_marginLeft="20dp"
+                android:textColor="@color/text_hei"
+                />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <GridView
+                    android:id="@+id/addcomment_gridview"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:numColumns="4"
+                    android:horizontalSpacing="5dp"
+                    android:verticalSpacing="5dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"/>
+            </RelativeLayout>
+
+
+            <TextView
+                android:id="@+id/addcomment_submit"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:text="Reservation"
+                android:textColor="@color/baise"
+                android:gravity="center"
+                android:background="@drawable/shape_text_bg_zhutise"
+                android:layout_margin="30dp"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

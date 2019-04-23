@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.yidankeji.cheng.ebuyhouse.mainmodule.activity.HtmlWordActivity">
+    <FrameLayout
+        android:id="@+id/set_yincang"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/baise"
+        android:visibility="gone"/>
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+
+                    android:id="@+id/re"
+                    android:background="@color/text_red">
+
+        <ImageView
+            android:id="@+id/action_bar_back"
+            android:layout_width="wrap_content"
+            android:minWidth="50dp"
+            android:layout_height="match_parent"
+            android:src="@mipmap/jiantou_left"
+            android:scaleType="center"/>
+
+        <TextView
+            android:id="@+id/action_bar_title"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text=""
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:gravity="center"
+            android:layout_centerInParent="true"/>
+
+        <TextView
+            android:id="@+id/action_bar_right"
+            android:layout_width="wrap_content"
+            android:minWidth="50dp"
+            android:layout_height="match_parent"
+            android:text=""
+            android:textColor="@color/text_heise"
+            android:gravity="center"
+            android:paddingRight="10dp"
+            android:layout_alignParentRight="true"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/line_huise"
+            android:layout_alignParentBottom="true"/>
+
+    </RelativeLayout>
+
+    <com.yidankeji.cheng.ebuyhouse.utils.ProgressWebView
+        android:id="@+id/webview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></com.yidankeji.cheng.ebuyhouse.utils.ProgressWebView>
+</LinearLayout>

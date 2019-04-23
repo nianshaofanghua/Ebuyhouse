@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/baise">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/zhutise">
+        <FrameLayout
+            android:id="@+id/seach_yincang"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/zhutise"
+            android:visibility="gone"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal">
+            <ImageView
+                android:id="@+id/seach_back"
+                android:layout_width="wrap_content"
+                android:minWidth="50dp"
+                android:layout_height="match_parent"
+                android:src="@mipmap/jiantou_left"
+                android:scaleType="center"/>
+            <EditText
+                android:id="@+id/seach_edit"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="35dp"
+                android:hint=""
+                android:textColorHint="@color/line_hui"
+                android:textSize="14sp"
+                android:layout_marginRight="15dp"
+                android:layout_marginLeft="15dp"
+                android:layout_gravity="center_vertical"
+                android:drawableLeft="@mipmap/main_seach_logo"
+                android:drawablePadding="5dp"
+                android:paddingLeft="5dp"
+                android:maxLines="1"
+                android:background="@drawable/shape_edit_hudu_baise"/>
+            <TextView
+                android:id="@+id/seach_seach"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:minWidth="50dp"
+                android:text="Seach"
+                android:textColor="@color/baise"
+                android:layout_gravity="center_vertical"
+                android:gravity="center"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/select_bg_butclick_zhutise"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <com.scwang.smartrefresh.layout.SmartRefreshLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/seach_refreshlayout">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/baise">
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/seach_recyclerview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/seach_nodata"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="There's no data you want for the time being"
+                android:textColor="@color/text_hui"
+                android:layout_centerInParent="true"
+                android:visibility="gone"/>
+        </RelativeLayout>
+    </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+
+</LinearLayout>
+
+

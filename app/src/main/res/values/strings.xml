@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">EBuyHouse</string>
+    <string name="title_activity_maps">Map</string>
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="net_erro">Network request failed, please check your network</string>
+    <string name="net_erro1">Network request failed, please check your network</string>
+    <string name="json_erro">Sorry, parsing error</string>
+    <string name="no_login">Sorry, you no have logged in yet</string>
+    <item name="webview01" type="id">web</item>
+    <string name="no_data">No data for the time being</string>
+    <string name="daikaifa">Sorry, this function is to be developed</string>
+    <string name="filter_vcode">0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ,.;*@!$%():"?</string>
+    <string name="community_edit">You do not yet have a community circle, please choose to join the community circle</string>
+</resources>

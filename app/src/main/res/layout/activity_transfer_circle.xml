@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/text_little_gray"
+    android:orientation="vertical"
+    tools:context="com.yidankeji.cheng.ebuyhouse.community.activity.TransferCircleActivity">
+
+    <FrameLayout
+        android:id="@+id/housetype_yincang"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/text_red"
+        android:visibility="gone"/>
+
+    <include layout="@layout/action_bar_title"/>
+
+    <com.yidankeji.cheng.ebuyhouse.utils.ScrollChangeScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/white">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:text="You will lose contact with them"
+                    android:textColor="#343434"
+                    android:textSize="12dp"/>
+
+                <TextView
+                    android:id="@+id/tv_friend_num"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:text="100 People"
+                    android:textColor="#343434"
+                    android:textSize="12dp"/>
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/text_use_gray"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white">
+
+                <GridView
+                    android:id="@+id/friend_list"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/white"
+                    android:numColumns="6"
+                    android:verticalSpacing="10dp"
+                    ></GridView>
+
+
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:background="@color/text_little_gray"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="40dp"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:id="@+id/tv_dissolve"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:background="@drawable/shape_edit_hudu_white"
+                        android:gravity="center"
+                        android:text="Dissolve"
+                        android:textColor="@color/text_use_gray"/>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:id="@+id/tv_transfer"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:background="@drawable/shape_text_bg_zhutise"
+                        android:gravity="center"
+                        android:text="Transfer"
+                        android:textColor="@color/white"
+                        />
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+    </com.yidankeji.cheng.ebuyhouse.utils.ScrollChangeScrollView>
+</LinearLayout>

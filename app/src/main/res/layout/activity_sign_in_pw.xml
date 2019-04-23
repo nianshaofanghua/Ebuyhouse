@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:id="@+id/signin_pw_yincang"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/baise"
+        android:visibility="gone"/>
+    <include layout="@layout/action_bar_title02"/>
+
+    <com.scwang.smartrefresh.layout.SmartRefreshLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:srlEnablePureScrollMode="true">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/signinpw_toptitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="20dp"
+                android:text="Please enter your password"
+                android:gravity="center"
+                android:textSize="20dp"
+                android:textColor="@color/text_heise"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:orientation="horizontal"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="50dp"
+                android:layout_marginTop="20dp">
+                <EditText
+                    android:id="@+id/signin_pw"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="40dp"
+                    android:textSize="14sp"
+                    android:textColorHint="@color/text_hui"
+                    android:paddingLeft="10dp"
+                    android:maxLines="1"
+                    android:inputType="textPassword"
+                    android:background="@drawable/shape_edit_biankuang"/>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/signinpw_submit"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="50dp"
+                android:layout_marginTop="20dp"
+                android:text="Submit"
+                android:textColor="@color/baise"
+                android:background="@color/zhutise"
+                android:gravity="center"/>
+
+            <TextView
+                android:id="@+id/signinpw_notes"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="Don't Know password"
+                android:textColor="@color/zhutise"
+                android:gravity="center_horizontal"/>
+
+        </LinearLayout>
+    </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+
+
+</LinearLayout>

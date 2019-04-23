@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/line_color"
+                android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:id="@+id/contract_yincang"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/baise"
+            android:visibility="gone"/>
+
+        <com.yidankeji.cheng.ebuyhouse.utils.ProgressWebView
+            android:id="@+id/contract_webview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/message"
+        android:layout_width="60dp"
+        android:layout_height="70dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="60dp"
+        android:layout_marginRight="40dp"
+        android:scaleType="center"
+        android:src="@mipmap/contract_meesage"
+        android:visibility="gone"/>
+    <!--<com.tencent.smtt.sdk.WebView-->
+    <!--android:id="@+id/contract_webview"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"></com.tencent.smtt.sdk.WebView>-->
+
+
+</RelativeLayout>

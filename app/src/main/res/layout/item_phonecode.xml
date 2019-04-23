@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:id="@+id/item_phonecode_layout">
+
+    <TextView
+        android:id="@+id/item_phonecode_title"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/line_hui"
+        android:gravity="center_vertical"
+        android:text="All Countries"
+        android:textColor="@color/text_heise"
+        android:paddingLeft="10dp"
+        android:visibility="gone"/>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+        <TextView
+            android:id="@+id/item_phonecode_name"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:text="fgbhj"
+            android:textColor="@color/text_heise"
+            android:gravity="center_vertical"
+            android:paddingLeft="20dp"/>
+        <TextView
+            android:id="@+id/item_phonecode_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="yj"
+            android:textColor="@color/text_hei"
+            android:paddingRight="10dp"/>
+    </LinearLayout>
+
+    <View style="@style/myline"/>
+</LinearLayout>

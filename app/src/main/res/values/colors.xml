@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="zhutise">#f85252</color><!--主题色-->
+    <color name="text_hei">#929292</color><!--字体黑-->
+    <color name="baise">#FFFFFF</color><!--白色-->
+    <color name="text_red">#f85d5d</color><!--字体红-->
+    <color name="line_hui">#F2F2F2</color><!--线灰-->
+
+    <!--整理后-->
+    <color name="text_heise">#333333</color><!--字体黑-->
+    <color name="text_hui">#acadad</color><!--字体灰-->
+    <color name="line_huise">#acadad</color><!--线灰-->
+    <color name="bg_huise">#F2F2F2</color><!--背景灰色-->
+    <color name="bg_shenzhutise">#e33030</color><!--点击之后深主题色-->
+    <color name="so_white">#00000000</color>
+    <color name="text_gary">#ffb4b4b4</color>
+    <color name="text_little_gray">#fff7f7f9</color>
+    <color name="text_use_gray">#979797</color>
+    <color name="text_sub">#919191</color>
+
+    <!-- 其它背景色或分割线相关 -->
+    <color name="bg_content">#f3f3f3</color>
+    <color name="divider_line">#d9d9d9</color>
+
+    <!-- 字体色 -->
+    <color name="text_title">#1b1b1b</color>
+    <color name="text_content">#818181</color>
+
+    <color name="text_hint">#c7c7c7</color>
+    <color name="text_black">#404040</color>
+    <color name="sendbtn">#1AAB19</color>
+</resources>

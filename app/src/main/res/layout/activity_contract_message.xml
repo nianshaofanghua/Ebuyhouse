@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#f0f0f0"
+    tools:context="com.yidankeji.cheng.ebuyhouse.myinfomodule.activity.ContractMessageActivity">
+
+
+    <FrameLayout
+        android:id="@+id/boardcast_yincang"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/baise"
+        android:visibility="gone"/>
+    <include layout="@layout/action_bar_title02"/>
+
+    <com.scwang.smartrefresh.layout.SmartRefreshLayout
+        android:id="@+id/boardcast_refreshlayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ListView
+                android:id="@+id/boardcast_recyclerview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+            <TextView
+                android:textColor="@color/black"
+                android:id="@+id/mymeaage_nodata"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/no_data"
+                android:layout_centerInParent="true"/>
+        </RelativeLayout>
+    </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+</LinearLayout>

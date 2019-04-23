@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="House video"
+        android:textColor="@color/text_heise"
+        android:paddingLeft="10dp"
+        android:paddingTop="5dp"
+        android:paddingBottom="3dp"/>
+
+
+    <RelativeLayout
+        android:layout_width="80dp"
+        android:layout_height="80dp">
+
+        <ImageView
+            android:id="@+id/item_submitroom_video"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="10dp"
+            android:scaleType="fitXY"
+            android:src="@mipmap/xuqiudan_xiangce"/>
+
+        <ImageView
+            android:id="@+id/item_submitroom_deletevideo"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentRight="true"
+            android:src="@mipmap/xiangce_delete"
+            android:visibility="gone"/>
+    </RelativeLayout>
+
+
+    <View style="@style/myline_kuan"/>
+
+</LinearLayout>

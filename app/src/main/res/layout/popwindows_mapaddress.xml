@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="@color/baise"
+              android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/popwindow_mapaddress_layout01"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/popwindow_mapaddress_iamge"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scaleType="fitXY"
+            android:src="@mipmap/map_addess"/>
+
+        <ImageView
+            android:id="@+id/popwindow_mapaddress_collect"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentRight="true"
+            android:scaleType="center"
+            android:src="@mipmap/pro_shoucang_e"
+            android:visibility="gone"/>
+
+        <TextView
+            android:id="@+id/savenum"
+            android:layout_width="45dp"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="5dp"
+            android:drawableLeft="@mipmap/pro_shoucang_e"
+            android:gravity="center|bottom"
+            android:paddingBottom="10dp"
+            android:src="@mipmap/pro_shoucang_e"
+            android:text="5"
+            android:textColor="@color/text_hui"
+           />
+
+
+        <TextView
+            android:id="@+id/see_num"
+            android:layout_width="45dp"
+            android:visibility="gone"
+            android:layout_height="40dp"
+            android:layout_marginLeft="5dp"
+            android:layout_toLeftOf="@+id/savenum"
+            android:drawableLeft="@mipmap/see_num"
+
+            android:gravity="center|bottom"
+            android:paddingBottom="10dp"
+            android:text="0"
+            android:textColor="@color/text_hui"
+            android:textSize="14dp"
+            />
+
+        <TextView
+            android:layout_alignParentRight="true"
+            android:text=""
+            android:id="@+id/collect_num"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="15dp"
+            android:layout_marginRight="6dp"
+            android:layout_toLeftOf="@+id/img_pos"
+            android:drawableLeft="@mipmap/pro_heart"
+            android:drawablePadding="4dp"
+            android:gravity="center_vertical"
+            android:minWidth="30dp"
+
+            android:textColor="@color/white"
+            android:textSize="12dp"/>
+
+        <TextView
+
+            android:id="@+id/watch_num"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="15dp"
+            android:layout_marginRight="6dp"
+            android:layout_toLeftOf="@+id/collect_num"
+            android:drawableLeft="@mipmap/pro_eye"
+            android:drawablePadding="4dp"
+            android:gravity="center_vertical"
+            android:minWidth="30dp"
+            android:paddingLeft="4dp"
+            android:text=""
+            android:textColor="@color/white"
+            android:textSize="12dp"/>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/popwindow_mapaddress_layout02"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/popwindow_mapaddress_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:text=""
+            android:textColor="@color/zhutise"
+            android:textSize="20sp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/popwindow_mapaddress_jishi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:text=""
+            android:textColor="@color/text_heise"
+            android:visibility="visible"/>
+
+        <TextView
+            android:id="@+id/popwindow_mapaddress_adddress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text=""
+            android:textColor="@color/text_heise"
+            android:visibility="gone"/>
+
+        <TextView
+            android:id="@+id/popwindow_mapaddress_address02"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:text=""
+            android:textColor="@color/text_heise"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/popwindow_mapaddress_check"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/shape_layout_zhutisebiankuang"
+        android:gravity="center"
+        android:text="Talk to the homeowner"
+        android:textColor="@color/white"/>
+</LinearLayout>

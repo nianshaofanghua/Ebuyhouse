@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+
+
+    <TextView
+        android:id="@+id/tv_first_word"
+        android:text="A"
+        android:gravity="center_vertical"
+        android:paddingLeft="10dp"
+        android:textColor="@color/text_red"
+        android:background="@color/text_little_gray"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:visibility="gone"
+            android:id="@+id/iv_chose"
+            android:layout_marginLeft="10dp"
+            android:layout_centerVertical="true"
+            android:scaleType="center"
+            android:src="@mipmap/radio_group_notchose"
+            android:layout_width="20dp"
+            android:layout_height="20dp"/>
+        <com.makeramen.roundedimageview.RoundedImageView
+            android:layout_toRightOf="@+id/iv_chose"
+            android:id="@+id/iv_user"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            app:riv_oval="true"
+            android:scaleType="centerCrop"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:src="@mipmap/erro_iamge_fang"/>
+
+        <TextView
+            android:id="@+id/tv_user"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/iv_user"
+            android:text="admister"
+            android:textColor="@color/black"
+            android:textSize="14dp"/>
+
+
+        <TextView
+            android:visibility="gone"
+            android:id="@+id/tv_message"
+            android:gravity="center"
+            android:textSize="10dp"
+            android:text="9"
+            android:textColor="@color/white"
+            android:background="@drawable/shape_circle_red"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20dp"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </RelativeLayout>
+</LinearLayout>

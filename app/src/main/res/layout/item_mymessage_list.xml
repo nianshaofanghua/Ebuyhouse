@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_marginLeft="10dp"
+              android:layout_marginRight="10dp"
+              android:layout_marginTop="10dp"
+              android:background="@color/baise"
+              android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/item_rl"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_margin="10dp">
+
+        <ImageView
+            android:id="@+id/item_mymessagelist_touxiang"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:scaleType="fitXY"
+            android:src="@mipmap/touxiang"/>
+
+        <TextView
+            android:id="@+id/item_mymessagelist_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text=""
+            android:textColor="@color/text_heise"/>
+
+        <TextView
+            android:id="@+id/item_mymessagelist_reply"
+            android:layout_width="70dp"
+            android:layout_height="30dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/shape_text_bg_zhutise"
+            android:gravity="center"
+            android:text="Reply"
+            android:textColor="@color/baise"/>
+
+        <TextView
+            android:id="@+id/item_mymessagelist_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/item_mymessagelist_time"
+            android:layout_toRightOf="@+id/item_mymessagelist_touxiang"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:paddingLeft="10dp"
+            android:paddingTop="10dp"
+            android:text=""
+            android:textColor="@color/text_heise"/>
+
+        <TextView
+            android:id="@+id/item_mymessagelist_bianhao"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/item_mymessagelist_name"
+            android:layout_toLeftOf="@+id/item_mymessagelist_time"
+            android:layout_toRightOf="@+id/item_mymessagelist_touxiang"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:paddingLeft="10dp"
+            android:text=""
+            android:textColor="@color/text_hei"/>
+
+        <TextView
+            android:id="@+id/item_mymessagelist_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/item_mymessagelist_bianhao"
+            android:layout_toLeftOf="@+id/item_mymessagelist_time"
+            android:layout_toRightOf="@+id/item_mymessagelist_touxiang"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:paddingLeft="10dp"
+            android:text=""
+            android:textColor="@color/text_hei"/>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/item_mymessagelist_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:drawableLeft="@mipmap/mymessage_q"
+        android:drawablePadding="5dp"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:paddingBottom="10dp"
+        android:text=""
+        android:textColor="@color/text_heise"/>
+
+    <LinearLayout
+        android:id="@+id/item_ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@color/line_hui"
+        android:orientation="vertical">
+
+        <com.yidankeji.cheng.ebuyhouse.utils.NoMoveListView
+            android:id="@+id/item_mymessagelist_listview"
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:layout_margin="10dp"
+            android:background="@color/line_hui"
+            android:divider="@color/line_hui"
+            android:dividerHeight="1dp"
+            android:listSelector="#00000000"/>
+
+        <TextView
+            android:id="@+id/item_mymessagelist_listview_num"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_gravity="right"
+            android:drawableLeft="@mipmap/qanda"
+            android:drawablePadding="5dp"
+            android:gravity="center_vertical"
+            android:paddingLeft="10dp"
+            android:paddingRight="20dp"
+            android:text=""
+            android:textColor="@color/zhutise"/>
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/item_mymessagelist_gopro"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="right"
+            android:gravity="right|center_vertical"
+            android:paddingRight="10dp"
+            android:text="View the house"
+            android:textColor="@color/zhutise"/>
+
+        <TextView
+            android:id="@+id/is_new"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/shape_text_bg_zhutise"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:text="new"
+            android:textColor="@color/white"/>
+    </RelativeLayout>
+
+</LinearLayout>

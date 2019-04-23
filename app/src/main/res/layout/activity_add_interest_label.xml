@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/text_little_gray"
+    android:orientation="vertical"
+    tools:context="com.yidankeji.cheng.ebuyhouse.community.activity.AddInterestLabelActivity">
+
+    <FrameLayout
+        android:id="@+id/housetype_yincang"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/text_red"
+        android:visibility="gone"/>
+
+    <include layout="@layout/action_bar_title"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/et_label"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="3"
+            android:background="@null"
+            android:gravity="center_vertical"
+            android:hint="Enter new label"
+            android:textColor="@color/black"
+            android:textSize="16dp"/>
+<View
+    android:background="@color/text_little_gray"
+    android:layout_width="1dp"
+    android:layout_height="match_parent"/>
+
+        <TextView
+            android:id="@+id/tv_add"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="Add To"
+            android:textColor="@color/text_red"
+            android:textSize="16dp"/>
+    </LinearLayout>
+
+    <ListView
+android:layout_marginTop="1dp"
+        android:dividerHeight="0.5dp"
+        android:divider="@color/line_hui"
+        android:id="@+id/list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+</LinearLayout>

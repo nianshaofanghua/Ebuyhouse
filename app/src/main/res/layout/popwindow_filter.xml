@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/line_hui">
+
+    <!--标题栏-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/baise">
+        <TextView
+            android:id="@+id/filter_pop_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:minWidth="50dp"
+            android:text="Cancel"
+            android:textColor="@color/zhutise"
+            android:gravity="center"
+            android:paddingLeft="10dp"/>
+        <TextView
+            android:id="@+id/filter_pop_apply"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:minWidth="50dp"
+            android:text="Filter"
+            android:textSize="20sp"
+            android:textColor="@color/zhutise"
+            android:gravity="center"
+            android:paddingRight="10dp"
+            android:layout_centerInParent="true"/>
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/zhutise"/>
+    <!--分类-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/filter_pop_forsale"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:text="For Sale"
+            android:textColor="@color/zhutise"
+            android:gravity="center"/>
+        <View
+            android:layout_width="1dp"
+            android:layout_height="30dp"
+            android:background="@color/text_hui"
+            android:layout_gravity="center_vertical"/>
+        <TextView
+            android:id="@+id/filter_pop_forrent"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:text="For Rent"
+            android:textColor="@color/text_hui"
+            android:gravity="center"/>
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/text_hui"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <!--房屋类型-->
+            <include layout="@layout/filter_layout_properytypes"/>
+
+            <!--房屋价钱-->
+            <include layout="@layout/filter_layout_price"/>
+
+            <!--卧室 、 浴室-->
+            <include layout="@layout/filter_layout_dedsandbaths"/>
+
+            <!--房间面积-->
+            <include layout="@layout/filter_layout_squarefeet"/>
+
+            <!--年龄-->
+            <include layout="@layout/filter_layout_yearbuild"/>
+
+            <!---->
+            <include layout="@layout/filter_layout_lotsize"/>
+
+            <!---->
+            <include layout="@layout/filter_layout_daysonebuyhouse"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:layout_centerVertical="true"
+            android:text="Reset"
+            android:textColor="@color/baise"
+            android:gravity="center"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:background="@drawable/shape_text_bg_zhutise"
+            android:layout_marginLeft="15dp"/>
+        <TextView
+            android:id="@+id/filter_layout_seach"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:layout_centerVertical="true"
+            android:text="Seach"
+            android:textColor="@color/baise"
+            android:gravity="center"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:background="@drawable/shape_text_bg_zhutise"
+            android:layout_marginRight="15dp"
+            android:layout_alignParentRight="true"
+            android:drawableLeft="@mipmap/main_seach_logo"
+            android:drawablePadding="5dp"/>
+    </RelativeLayout>
+</LinearLayout>

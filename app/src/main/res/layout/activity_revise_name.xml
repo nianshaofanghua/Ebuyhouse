@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/text_little_gray"
+    android:orientation="vertical"
+    tools:context="com.yidankeji.cheng.ebuyhouse.community.activity.ReviseNameActivity">
+
+    <FrameLayout
+        android:id="@+id/housetype_yincang"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/text_red"
+        android:visibility="gone"/>
+
+    <include layout="@layout/action_bar_title"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_revise_name"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="10dp"
+            android:gravity="center_vertical"
+            android:text="First name"
+            android:textColor="@color/text_use_gray"
+            android:textSize="14dp"/>
+
+        <EditText
+            android:id="@+id/et_name"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginBottom="50dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/shape_edit_biankuang"
+            android:gravity="center_vertical"
+            android:paddingLeft="10dp"
+            android:singleLine="true"
+
+            android:textColor="@color/text_heise"
+
+            android:textSize="14sp"/>
+    </LinearLayout>
+    <TextView
+        android:id="@+id/tv_submit"
+        android:layout_marginTop="60dp"
+        android:text="Submit"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:textSize="16dp"
+        android:layout_marginRight="24dp"
+        android:layout_marginLeft="24dp"
+        android:background="@drawable/shape_text_bg_zhutise"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"/>
+</LinearLayout>

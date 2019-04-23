@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/text_little_gray"
+    android:orientation="vertical"
+    tools:context="com.yidankeji.cheng.ebuyhouse.community.activity.ReviseGroupNameActivity">
+
+    <FrameLayout
+        android:id="@+id/housetype_yincang"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/text_red"
+        android:visibility="gone"/>
+
+    <include layout="@layout/action_bar_title"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:text="Group name"
+        android:textColor="@color/text_use_gray"
+        android:textSize="14dp"/>
+
+    <LinearLayout
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/et_name"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="5dp"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:gravity="center_vertical"
+            android:maxLines="1"
+            android:paddingLeft="10dp"
+            android:textColor="@color/black"
+            android:textSize="14dp"/>
+
+        <ImageView
+            android:id="@+id/iv_delete"
+            android:layout_marginRight="10dp"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_gravity="center_vertical"
+            android:src="@mipmap/circle_delete"/>
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/tv_determine"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginRight="24dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/shape_text_bg_zhutise"
+        android:gravity="center"
+        android:text="Determine"
+        android:textColor="@color/white"/>
+</LinearLayout>

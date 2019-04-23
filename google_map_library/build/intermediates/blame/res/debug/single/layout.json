@@ -1,0 +1,26 @@
+[
+    {
+        "merged": "E:\\workSpace\\Ebuyhouse\\Ebuyhouse\\google_map_library\\build\\intermediates\\res\\merged\\debug\\layout\\amu_text_bubble.xml",
+        "source": "E:\\workSpace\\Ebuyhouse\\Ebuyhouse\\google_map_library\\res\\layout\\amu_text_bubble.xml"
+    },
+    {
+        "merged": "E:\\workSpace\\Ebuyhouse\\Ebuyhouse\\google_map_library\\build\\intermediates\\res\\merged\\debug\\layout\\amu_info_window.xml",
+        "source": "E:\\workSpace\\Ebuyhouse\\Ebuyhouse\\google_map_library\\res\\layout\\amu_info_window.xml"
+    },
+    {
+        "merged": "E:\\workSpace\\Ebuyhouse\\Ebuyhouse\\google_map_library\\build\\intermediates\\res\\merged\\debug\\layout\\amu_webview.xml",
+        "source": "E:\\workSpace\\Ebuyhouse\\Ebuyhouse\\google_map_library\\res\\layout\\amu_webview.xml"
+    },
+    {
+        "merged": "C:\\Project\\Ebuyhouse\\google_map_library\\build\\intermediates\\res\\merged\\debug\\layout\\amu_info_window.xml",
+        "source": "C:\\Project\\Ebuyhouse\\google_map_library\\res\\layout\\amu_info_window.xml"
+    },
+    {
+        "merged": "C:\\Project\\Ebuyhouse\\google_map_library\\build\\intermediates\\res\\merged\\debug\\layout\\amu_webview.xml",
+        "source": "C:\\Project\\Ebuyhouse\\google_map_library\\res\\layout\\amu_webview.xml"
+    },
+    {
+        "merged": "C:\\Project\\Ebuyhouse\\google_map_library\\build\\intermediates\\res\\merged\\debug\\layout\\amu_text_bubble.xml",
+        "source": "C:\\Project\\Ebuyhouse\\google_map_library\\res\\layout\\amu_text_bubble.xml"
+    }
+]

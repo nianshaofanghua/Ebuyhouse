@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:id="@+id/myinfo_yincang"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/baise"
+        android:visibility="gone"/>
+    <include layout="@layout/action_bar_title02"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <!--头像-->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:paddingLeft="10dp"
+                android:text="User picture"
+                android:textColor="@color/text_heise"/>
+
+            <com.makeramen.roundedimageview.RoundedImageView
+                android:id="@+id/myinfo_touxiang"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerInParent="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:scaleType="centerCrop"
+                android:src="@mipmap/touxiang"
+                app:riv_border_color="@color/line_huise"
+
+                app:riv_oval="true"/>
+
+        </RelativeLayout>
+
+        <View style="@style/myline"/>
+        <!--名字-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Name"
+                android:textColor="@color/text_heise"
+                android:gravity="center_vertical"
+                android:paddingLeft="10dp"/>
+            <TextView
+                android:id="@+id/myinfo_name"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:paddingRight="10dp"
+                android:textColor="@color/text_heise"
+                android:gravity="right|center_vertical"/>
+        </LinearLayout>
+        <View style="@style/myline"/>
+        <!--第一名字-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="First name"
+                android:textColor="@color/text_heise"
+                android:gravity="center_vertical"
+                android:paddingLeft="10dp"/>
+            <TextView
+                android:id="@+id/myinfo_firstname"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:paddingRight="10dp"
+                android:textColor="@color/text_heise"
+                android:gravity="right|center_vertical"/>
+        </LinearLayout>
+        <View style="@style/myline"/>
+        <!--M名字-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Middle name"
+                android:textColor="@color/text_heise"
+                android:gravity="center_vertical"
+                android:paddingLeft="10dp"/>
+            <TextView
+                android:id="@+id/myinfo_middlename"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:paddingRight="10dp"
+                android:textColor="@color/text_heise"
+                android:gravity="right|center_vertical"/>
+        </LinearLayout>
+        <View style="@style/myline"/>
+        <!--最后名字-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Last name"
+                android:textColor="@color/text_heise"
+                android:gravity="center_vertical"
+                android:paddingLeft="10dp"/>
+            <TextView
+                android:id="@+id/myinfo_lastname"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:paddingRight="10dp"
+                android:textColor="@color/text_heise"
+                android:gravity="right|center_vertical"/>
+        </LinearLayout>
+        <View style="@style/myline"/>
+        <!--金钱-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Annual income"
+                android:textColor="@color/text_heise"
+                android:gravity="center_vertical"
+                android:paddingLeft="10dp"/>
+            <TextView
+                android:id="@+id/myinfo_annualincome"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:paddingRight="10dp"
+                android:textColor="@color/text_heise"
+                android:gravity="right|center_vertical"/>
+        </LinearLayout>
+        <View style="@style/myline"/>
+
+    </LinearLayout>
+
+</LinearLayout>

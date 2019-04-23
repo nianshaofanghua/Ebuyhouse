@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <FrameLayout
+        android:id="@+id/setpw_yincang"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/baise"
+        android:visibility="gone"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/setpw_back"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@mipmap/jiantou_left_zhutise"
+            android:scaleType="center"/>
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/login_icon"
+            android:layout_marginTop="60dp"/>
+    </RelativeLayout>
+
+    <EditText
+        android:id="@+id/setpw_mima"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/shape_edit_biankuang"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="30dp"
+        android:hint="Please enter a new password"
+        android:textSize="14sp"
+        android:inputType="textPassword"
+        android:textColorHint="@color/text_hei"
+        android:textColor="@color/text_heise"
+        android:paddingLeft="10dp"
+        android:singleLine="true"
+        android:maxLength="20"
+        android:digits="@string/filter_vcode"/>
+
+    <EditText
+        android:id="@+id/setpw_mima_angin"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/shape_edit_biankuang"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"
+        android:hint="Please confirm your password"
+        android:textSize="14sp"
+        android:inputType="textPassword"
+        android:textColorHint="@color/text_hei"
+        android:textColor="@color/text_heise"
+        android:paddingLeft="10dp"
+        android:maxLength="20"
+        android:singleLine="true"
+        android:digits="@string/filter_vcode"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Please enter a unique password at least 8 characters in length.  Password must include letters, numbers, and special characters."
+        android:gravity="center"
+        android:textColor="@color/text_hei"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"/>
+
+    <TextView
+        android:id="@+id/setpw_submit"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/shape_text_bg_zhutise"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:text="Continue"
+        android:gravity="center"
+        android:textColor="@color/baise"/>
+
+</LinearLayout>

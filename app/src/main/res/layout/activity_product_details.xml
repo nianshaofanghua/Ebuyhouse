@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:focusableInTouchMode="true"
+             android:orientation="vertical">
+
+    <com.scwang.smartrefresh.layout.SmartRefreshLayout
+        android:id="@+id/prodetais_refreshlayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.yidankeji.cheng.ebuyhouse.utils.ScrollChangeScrollView
+            android:id="@+id/prodetais_scrollview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:id="@+id/re"
+                    android:layout_width="match_parent"
+                    android:layout_height="250dp">
+
+                    <com.yidankeji.cheng.ebuyhouse.utils.lunbotu.ConvenientBanner
+                        android:id="@+id/productdetais_lunbo"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"/>
+
+                    <ImageView
+                        android:id="@+id/video_icon"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:scaleType="center"
+                        android:src="@mipmap/video_icons"/>
+
+                    <TextView
+                        android:id="@+id/img_pos"
+                        android:layout_width="wrap_content"
+                        android:layout_height="20dp"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginRight="12dp"
+                        android:drawableLeft="@mipmap/pro_carema"
+                        android:drawablePadding="4dp"
+                        android:gravity="center_vertical"
+                        android:minWidth="30dp"
+                        android:textColor="@color/white"
+                        android:textSize="12dp"/>
+
+                    <TextView
+
+                        android:id="@+id/collect_num"
+                        android:layout_width="wrap_content"
+                        android:layout_height="20dp"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginRight="6dp"
+                        android:layout_toLeftOf="@+id/img_pos"
+                        android:drawableLeft="@mipmap/pro_heart"
+                        android:drawablePadding="4dp"
+                        android:gravity="center_vertical"
+                        android:minWidth="30dp"
+                        android:text=""
+                        android:textColor="@color/white"
+                        android:textSize="12dp"/>
+
+                    <TextView
+                        android:id="@+id/watch_num"
+                        android:layout_width="wrap_content"
+                        android:layout_height="20dp"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginRight="6dp"
+                        android:layout_toLeftOf="@+id/collect_num"
+                        android:drawableLeft="@mipmap/pro_eye"
+                        android:drawablePadding="4dp"
+                        android:gravity="center_vertical"
+                        android:minWidth="30dp"
+                        android:paddingLeft="4dp"
+                        android:text=""
+                        android:textColor="@color/white"
+                        android:textSize="12dp"/>
+                </RelativeLayout>
+
+                <!--基本信息-->
+                <include layout="@layout/item_productdetail_layout01"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_margin="10dp"
+                    android:background="@color/line_color"/>
+
+                <!--几室几厅信息-->
+                <include layout="@layout/item_productdetail_layout02"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_margin="10dp"
+                    android:background="@color/line_color"/>
+
+                <include layout="@layout/item_productdetail_canshu"/>
+
+                <include layout="@layout/item_productdetail_details"/>
+
+                <include layout="@layout/item_productdetail_callme"/>
+
+            </LinearLayout>
+        </com.yidankeji.cheng.ebuyhouse.utils.ScrollChangeScrollView>
+    </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/prodetais_yincanglayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#E42F47">
+
+            <FrameLayout
+                android:id="@+id/prodetais_yincang"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#00000000"
+                android:visibility="gone"/>
+
+            <ImageView
+                android:id="@+id/prodetais_back"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_below="@+id/prodetais_yincang"
+                android:scaleType="center"
+                android:src="@mipmap/jiantou_left"/>
+
+            <ImageView
+
+                android:id="@+id/prodetais_collect"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/prodetais_yincang"
+                android:scaleType="center"
+                android:src="@mipmap/pro_shoucang_e"
+                android:visibility="gone"/>
+
+            <ImageView
+                android:id="@+id/share"
+                android:layout_width="25dp"
+                android:layout_height="40dp"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/prodetais_yincang"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="10dp"
+                android:gravity="center|bottom"
+                android:scaleType="center"
+                android:src="@mipmap/share"/>
+
+
+            <ImageView
+                android:id="@+id/collect"
+                android:layout_width="25dp"
+                android:layout_height="40dp"
+                android:layout_below="@+id/prodetais_yincang"
+                android:layout_toLeftOf="@+id/share"
+                android:scaleType="center"
+                android:src="@mipmap/pro_shoucang_e"/>
+
+            <TextView
+                android:id="@+id/savenum"
+                android:layout_width="45dp"
+                android:layout_height="40dp"
+                android:layout_below="@+id/prodetais_yincang"
+                android:layout_marginLeft="5dp"
+                android:layout_toLeftOf="@+id/share"
+                android:drawableLeft="@mipmap/pro_shoucang_ed"
+                android:gravity="center|bottom"
+                android:paddingBottom="10dp"
+                android:src="@mipmap/pro_shoucang_e"
+
+                android:text="5"
+                android:textColor="@color/text_hui"
+                android:visibility="gone"/>
+
+
+            <TextView
+                android:id="@+id/see_num"
+                android:layout_width="45dp"
+                android:layout_height="40dp"
+                android:layout_below="@+id/prodetais_yincang"
+                android:layout_marginLeft="5dp"
+                android:layout_toLeftOf="@+id/savenum"
+                android:drawableLeft="@mipmap/see_num"
+                android:gravity="center|bottom"
+                android:paddingBottom="10dp"
+                android:text="0"
+                android:textColor="@color/text_hui"
+                android:textSize="14dp"
+                android:visibility="gone"
+                />
+
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="#fff"
+            android:gravity="center_vertical"
+            android:paddingLeft="10dp"
+            android:text="Buliding"
+            android:textSize="20dp"
+            android:visibility="gone"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/productdetais_submitoff"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/shape_sendrequest"
+        android:gravity="center"
+        android:text="Apply for offer"
+        android:textColor="@color/baise"/>
+
+    <View
+        android:id="@+id/gray_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        android:background="#66000000"/>
+</FrameLayout>
+

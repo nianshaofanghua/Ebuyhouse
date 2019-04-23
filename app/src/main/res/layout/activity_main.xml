@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <FrameLayout
+        android:id="@+id/main_content"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/line_hui"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:layout_marginTop="5dp">
+
+        <RadioGroup
+            android:id="@+id/main_radiogroup"
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:orientation="horizontal"
+            android:paddingTop="5dp">
+
+            <RadioButton
+                android:id="@+id/main_shouye"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@null"
+                android:button="@null"
+                android:checked="true"
+                android:drawableBottom="@drawable/tab_select_shouye"
+                android:paddingBottom="10dp"/>
+
+            <RadioButton
+                android:id="@+id/main_fenlei"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@null"
+                android:button="@null"
+                android:checked="false"
+                android:drawableBottom="@drawable/tab_select_service"
+                android:paddingBottom="10dp"/>
+
+            <RadioButton
+                android:id="@+id/main_xuqiudan"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@null"
+                android:button="@null"
+                android:checked="false"
+                android:drawableBottom="@drawable/tab_select_alerts"
+                android:paddingBottom="6dp"/>
+
+            <RadioButton
+                android:id="@+id/main_chat"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@null"
+                android:button="@null"
+                android:checked="false"
+                android:drawableBottom="@drawable/tab_select_chat"
+                android:paddingBottom="6dp"
+              />
+            <RadioButton
+                android:id="@+id/main_shoppingcar"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@null"
+                android:button="@null"
+                android:checked="false"
+                android:drawableBottom="@drawable/tab_select_more"
+                android:paddingBottom="10dp"/>
+        </RadioGroup>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:orientation="horizontal">
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"/>
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"/>
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <TextView
+                    android:id="@+id/message_num"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="12dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/circle_message_num"
+                    android:gravity="center"
+                    android:text=""
+                    android:visibility="gone"
+                    android:textColor="@color/white"
+                    android:textSize="10dp"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                >
+
+                <TextView
+                    android:id="@+id/community_num"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="12dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/circle_message_num"
+                    android:gravity="center"
+                    android:text=""
+                    android:textColor="@color/white"
+                    android:textSize="10dp"
+                    android:visibility="gone"/>
+            </RelativeLayout>
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"/>
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

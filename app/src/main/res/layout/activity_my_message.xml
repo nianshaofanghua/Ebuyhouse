@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:id="@+id/mymessage_yincang"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/baise"
+        android:visibility="gone"/>
+    <include layout="@layout/action_bar_title02"/>
+
+    <com.scwang.smartrefresh.layout.SmartRefreshLayout
+        android:id="@+id/mymeaage_refreshlayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/line_hui">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/mymeaage_recycler"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+           <TextView
+               android:textColor="@color/black"
+               android:id="@+id/mymeaage_nodata"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="@string/no_data"
+               android:layout_centerInParent="true"/>
+        </RelativeLayout>
+    </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+</LinearLayout>

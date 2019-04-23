@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/text_little_gray"
+    android:orientation="vertical"
+    tools:context="com.yidankeji.cheng.ebuyhouse.community.activity.NewFriendActivity">
+
+    <FrameLayout
+        android:id="@+id/housetype_yincang"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/text_red"
+        android:visibility="gone"/>
+
+    <include layout="@layout/action_bar_title"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:gravity="center_vertical"
+        android:paddingLeft="10dp"
+        android:visibility="gone"
+        android:text="Friends notice"
+        android:textColor="@color/black"
+        android:textSize="14dp"/>
+
+  <RelativeLayout
+      android:layout_width="match_parent"
+      android:layout_height="match_parent">
+
+      <com.d.lib.xrv.LRecyclerView
+          android:id="@+id/new_friend_list"
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:background="@color/text_little_gray"/>
+      <TextView
+          android:visibility="gone"
+          android:text="No More Data"
+          android:textColor="@color/black"
+          android:layout_centerInParent="true"
+          android:id="@+id/nomessage"
+          android:textSize="14dp"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"/>
+  </RelativeLayout>
+</LinearLayout>

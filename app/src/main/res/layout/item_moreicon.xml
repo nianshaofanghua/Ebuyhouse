@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    android:background="@drawable/select_item_click_bg_biankuang"
+    android:id="@+id/item_moreicon_layout">
+
+    <ImageView
+
+        android:id="@+id/item_moreicon_iamge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/more_chuzu"
+        android:layout_centerInParent="true"/>
+
+    <TextView
+
+        android:id="@+id/message_num"
+        android:layout_width="10dp"
+        android:layout_height="10dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="20dp"
+        android:visibility="gone"
+        android:background="@drawable/circle_message_num"
+        android:gravity="center"
+
+        android:textSize="10dp"
+        android:textColor="@color/white"/>
+    <TextView
+        android:id="@+id/item_moreicon_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="title"
+        android:textSize="12dp"
+        android:layout_marginTop="4dp"
+        android:gravity="center_horizontal"
+        android:layout_centerInParent="true"
+        android:layout_below="@+id/item_moreicon_iamge"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"/>
+</RelativeLayout>

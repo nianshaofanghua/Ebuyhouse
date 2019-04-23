@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:state_pressed="true"
+        android:state_focused="true"
+        android:state_selected="true">
+        <shape>
+            <solid android:color="@color/line_hui"/>
+        </shape>
+    </item>
+
+    <item>
+        <layer-list>
+            <item>
+                <shape>
+                    <solid android:color="@color/line_hui" />
+                </shape>
+            </item>
+            <item android:right="1dp" >
+                <shape>
+                    <solid android:color="@color/baise" />
+                </shape>
+            </item>
+        </layer-list>
+    </item>
+
+</selector>

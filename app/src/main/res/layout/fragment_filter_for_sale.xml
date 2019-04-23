@@ -1,0 +1,68 @@
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <!--房屋类型-->
+                <include layout="@layout/filter_layout_properytypes"/>
+
+                <!--房屋价钱-->
+                <include layout="@layout/filter_layout_price"/>
+
+                <!--几室几厅-->
+                <include layout="@layout/filter_layout_selectlayout"/>
+
+                <!--房间面积-->
+                <include layout="@layout/filter_layout_squarefeet"/>
+
+                <!--年龄-->
+                <include layout="@layout/filter_layout_yearbuild"/>
+
+                <!---->
+                <include layout="@layout/filter_layout_lotsize"/>
+
+                <!---->
+                <include layout="@layout/filter_layout_daysonebuyhouse"/>
+            </LinearLayout>
+        </ScrollView>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/text_hei"/>
+            <TextView
+                android:id="@+id/filtersale_reset"
+                android:layout_width="70dp"
+                android:layout_height="35dp"
+                android:text="Reset"
+                android:textColor="@color/baise"
+                android:gravity="center"
+                android:background="@drawable/shape_text_bg_zhutise"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"/>
+            <TextView
+                android:id="@+id/filtersale_seach"
+                android:layout_width="70dp"
+                android:layout_height="35dp"
+                android:text="Seach"
+                android:textColor="@color/baise"
+                android:gravity="center"
+                android:background="@drawable/shape_text_bg_zhutise"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="20dp"/>
+
+        </RelativeLayout>
+    </LinearLayout>

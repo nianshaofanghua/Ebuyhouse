@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.scwang.smartrefresh.layout.SmartRefreshLayout
+        android:id="@+id/servicedetail_refreshlayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.yidankeji.cheng.ebuyhouse.utils.ScrollChangeScrollView
+            android:id="@+id/servicedetail_scrollview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <!---->
+                <com.yidankeji.cheng.ebuyhouse.utils.lunbotu.ConvenientBanner
+                    android:id="@+id/servicedetail_banber"
+                    android:layout_width="match_parent"
+                    android:layout_height="250dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true" />
+                <!---->
+                <TextView
+                    android:id="@+id/servicedetail_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:text=""
+                    android:textSize="20sp"
+                    android:textColor="@color/text_heise"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:gravity="center_vertical"/>
+
+                <View style="@style/myline_kuan"/>
+                <!---->
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:text="Service Items"
+                    android:textColor="@color/text_heise"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:gravity="center_vertical"/>
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/servicedetail_serviceitem"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"/>
+
+                <View style="@style/myline_kuan"/>
+                <!---->
+                <TextView
+                    android:id="@+id/servicedetail_canshu1"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:text=""
+                    android:textColor="@color/text_heise"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:gravity="center_vertical"/>
+                <TextView
+                    android:id="@+id/servicedetail_canshu2"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:text=""
+                    android:textColor="@color/text_heise"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:gravity="center_vertical"
+                    android:drawableLeft="@mipmap/pro_address01"
+                    android:drawablePadding="10dp"/>
+                <TextView
+                    android:id="@+id/servicedetail_canshu3"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:text=""
+                    android:textColor="@color/text_heise"
+                    android:drawableLeft="@mipmap/mymessage_wode01"
+                    android:drawablePadding="10dp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:gravity="center_vertical"/>
+                <TextView
+                    android:id="@+id/servicedetail_canshu4"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:text=""
+                    android:textColor="@color/text_heise"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:gravity="center_vertical"
+                    android:drawableLeft="@mipmap/pro_phone01"
+                    android:drawablePadding="10dp"/>
+
+                <View style="@style/myline_kuan"/>
+
+                <ListView
+                    android:id="@+id/servicedetail_listview"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:dividerHeight="1dp"
+                    android:divider="@color/baise"/>
+            </LinearLayout>
+        </com.yidankeji.cheng.ebuyhouse.utils.ScrollChangeScrollView>
+    </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+
+    <!---->
+    <LinearLayout
+        android:id="@+id/servicedetail_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/zhutise">
+        <FrameLayout
+            android:id="@+id/servicedetail_yincang"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#00000000"
+            android:visibility="gone"/>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+            <ImageView
+                android:id="@+id/servicedetail_back"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@mipmap/jiantou_left"
+                android:scaleType="center" />
+            <ImageView
+                android:id="@+id/servicedetail_edit"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@mipmap/edit"
+                android:scaleType="center"
+                android:layout_alignParentRight="true"/>
+        </RelativeLayout>
+    </LinearLayout>
+</FrameLayout>

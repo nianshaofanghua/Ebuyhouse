@@ -1,0 +1,618 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="com.yidankeji.cheng.ebuyhouse">
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.CALL_PHONE"/>
+    <uses-permission android:name="android.permission.DOWNLOAD_WITHOUT_NOTIFICATION"/>
+    <uses-permission android:name="android.permission.ACCESS_DOWNLOAD_MANAGER"/>
+    <uses-permission android:name="android.permission.WRITE_SETTINGS"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"/>
+    <uses-permission android:name="android.permission.GET_TASKS"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/> <!-- 获取网络状态 -->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/> <!-- 获取MAC地址 -->
+    <uses-permission android:name="android.permission.RECORD_AUDIO"/> <!-- 允许程序录制音频 -->
+    <uses-permission android:name="android.permission.READ_LOGS"/> <!-- 获取logcat日志 -->
+
+
+    <uses-feature
+        android:glEsVersion="0x00020000"
+        android:required="true"/>
+
+    <application
+        android:name=".application.MyApplication"
+        android:icon="@mipmap/app_logo"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme">
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version"/>
+
+
+        <!-- sugar数据库配置信息 -->
+        <meta-data
+            android:name="DATABASE"
+            android:value="sugar_ebuyhouse.db"/>
+        <meta-data
+            android:name="VERSION"
+            android:value="1"/>
+        <meta-data
+            android:name="QUERY_LOG"
+            android:value="true"/>
+        <meta-data
+            android:name="DOMAIN_PACKAGE_NAME"
+            android:value="com.yidankeji.cheng.ebuyhouse.community.db"/>
+
+
+
+        <!-- <meta-data -->
+        <!-- android:name="com.google.android.geo.API_KEY" -->
+        <!-- android:value="AIzaSyD_Q1GpHMQUrcVGxjdE9zzTNpxmaKCCCnI"/> -->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyCuig-oYn7JLr35TtCWZ8Tut4BI6uoVBUU"/>
+        <!-- <meta-data -->
+        <!-- android:name="com.google.android.geo.API_KEY" -->
+        <!-- android:value="AIzaSyCOsXgz_5NiYjlAAHWzcGei3WbUNGccKYU"/> -->
+
+        <provider
+            android:name=".utils.FileProviderUtils.PictureSelectorFileProvider"
+            android:authorities="${applicationId}.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/mn_pictureselector_filepaths"/>
+        </provider>
+
+        <receiver
+            android:name=".utils.jiguang.JPushReciver"
+            android:enabled="true"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="cn.jpush.android.intent.REGISTRATION"/> <!-- Required  用户注册SDK的intent -->
+                <action android:name="cn.jpush.android.intent.MESSAGE_RECEIVED"/> <!-- Required  用户接收SDK消息的intent -->
+                <action android:name="cn.jpush.android.intent.NOTIFICATION_RECEIVED"/> <!-- Required  用户接收SDK通知栏信息的intent -->
+                <action android:name="cn.jpush.android.intent.NOTIFICATION_OPENED"/> <!-- Required  用户打开自定义通知栏的intent -->
+                <action android:name="cn.jpush.android.intent.CONNECTION"/> <!-- 接收网络变化 连接/断开 since 1.6.3 -->
+                <category android:name="com.yidankeji.cheng.ebuyhouse"/>
+            </intent-filter>
+        </receiver>
+
+        <!-- &lt;!&ndash; 启动页 &ndash;&gt;  //@style/ThemeSplash -->
+        <activity
+            android:name=".mainmodule.activity.StartActivity"
+            android:launchMode="singleInstance"
+            android:screenOrientation="portrait"
+            android:theme="@style/ThemeSplash">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+
+        <!-- 主页面 -->
+        <activity
+            android:name=".mainmodule.activity.MainActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@style/mainPageStyle"/>
+
+        <!-- 搜索页面 -->
+        <activity
+            android:name=".filtermodule.activity.SeachActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/otherPageStyle"/>
+
+        <!-- 筛选页面 -->
+        <activity
+            android:name=".filtermodule.activity.FilterActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat"/>
+
+        <!-- 房屋类型 -->
+        <activity
+            android:name=".filtermodule.activity.FilerHouseTypeActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/otherPageStyle"/>
+
+        <!-- 登录页面 -->
+        <activity
+            android:name=".loginmodule.activity.LoginActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/otherPageStyle"
+            android:windowSoftInputMode="adjustPan|stateHidden"/>
+
+        <!-- 谷歌地图定位 例子 -->
+        <activity
+            android:name=".activity.MapsActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/otherPageStyle"/>
+
+        <!-- 检查可用性 -->
+        <activity
+            android:name=".housemodule.activity.CheckAvailabilityActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/otherPageStyle"
+            android:windowSoftInputMode="adjustPan|stateHidden"/>
+
+        <!-- 输入密码 -->
+        <activity
+            android:name=".loginmodule.activity.SignInActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/otherPageStyle"
+            android:windowSoftInputMode="adjustPan|stateHidden"/>
+
+        <!-- 我的房子 -->
+        <activity
+            android:name=".myinfomodule.activity.MyRentalRoomActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat"/>
+
+        <!-- 收藏列表 -->
+        <activity
+            android:name=".myinfomodule.activity.SaveListActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat"/>
+
+        <!-- 出售 -->
+        <activity
+            android:name=".activity.RentalActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/otherPageStyle"/>
+
+        <!-- 出售 房屋详情页 -->
+        <activity
+            android:name=".housemodule.activity.ProductDetailsActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/otherPageStyle"
+            android:windowSoftInputMode="adjustPan|stateHidden"/>
+        1
+
+        <!-- 出租 房屋详情页 -->
+        <activity
+            android:name=".housemodule.activity.ProRentDetailActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/otherPageStyle"
+            android:windowSoftInputMode="adjustPan|stateHidden"/>
+
+        <!-- 合同 -->
+        <activity
+            android:name=".offermodule.ContractActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:theme="@style/otherPageStyle"/>
+
+        <!-- 出售房屋 -->
+        <activity
+            android:name=".housemodule.activity.PostRoomActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat"/>
+        <activity
+            android:name=".housemodule.activity.PostRoom02Activity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat"/>
+
+        <!-- 产品详情页进的详情 -->
+        <activity
+            android:name=".housemodule.activity.Map02Activity"
+            android:screenOrientation="portrait"
+            android:theme="@style/otherPageStyle"/>
+
+        <!-- 合同详情 -->
+        <activity
+            android:name=".offermodule.InformationActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/otherPageStyle"/>
+
+        <!-- 登录 或 注册 输入密码页面 -->
+        <activity
+            android:name=".loginmodule.activity.SignInPWActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/otherPageStyle"/>
+
+        <!-- 我的信息 -->
+        <activity
+            android:name=".myinfomodule.activity.MyInfoActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/otherPageStyle"/>
+
+        <!-- 输入框 -->
+        <activity
+            android:name=".activity.EditContentActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/otherPageStyle"/>
+
+        <!-- 上传房屋信息：选择城市、街道、邮编 -->
+        <activity
+            android:name=".housemodule.activity.PostRoomSelectAddressActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/otherPageStyle"
+            android:windowSoftInputMode="adjustPan|stateHidden"/>
+
+        <!-- 上传房屋信息：地图页面 -->
+        <activity
+            android:name=".housemodule.activity.PostRoomMapActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/otherPageStyle"/>
+
+        <!-- 提交出租数据 -->
+        <activity
+            android:name=".housemodule.activity.SubmitRoomActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/otherPageStyle"
+            android:windowSoftInputMode="adjustPan|stateHidden"/>
+
+        <!-- 提交出售数据 -->
+        <activity
+            android:name=".housemodule.activity.SubmitRoom02Activity"
+            android:screenOrientation="portrait"
+            android:theme="@style/otherPageStyle"
+            android:windowSoftInputMode="adjustPan|stateHidden"/>
+
+        <!-- 编辑房屋信息 -->
+        <activity
+            android:name=".housemodule.activity.EditRoomActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/otherPageStyle"
+            android:windowSoftInputMode="adjustPan|stateHidden"/>
+
+        <!-- 我的消息 -->
+        <activity
+            android:name=".myinfomodule.activity.MyMessageActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/NotitleTheme"
+            android:windowSoftInputMode="adjustPan|stateHidden"/>
+
+        <!-- 服务详情页 -->
+        <activity
+            android:name=".servicemodule.activity.ServiceDetailActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/otherPageStyle"/>
+
+        <!-- 提交off -->
+        <activity
+            android:name=".offermodule.SubmitOfferActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/otherPageStyle"/>
+
+        <!-- 提交服务评论 -->
+        <activity
+            android:name=".servicemodule.activity.AddCommentsActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/otherPageStyle"
+            android:windowSoftInputMode="adjustPan|stateHidden"/>
+
+        <!-- 上传资金证明 -->
+        <activity
+            android:name=".offermodule.SubmitZiJinActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/otherPageStyle"
+            android:windowSoftInputMode="adjustPan|stateHidden"/>
+
+        <!-- 图片预览 -->
+        <activity
+            android:name=".utils.PhotoView.PhotoViewActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:screenOrientation="fullSensor"/>
+
+        <!-- 设置页面 -->
+        <activity
+            android:name=".myinfomodule.activity.SetActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/otherPageStyle"/>
+
+        <!-- 提交房屋信息  出租和出售 -->
+        <activity
+            android:name=".housemodule.activity.SubmitRoomAllTypeActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/otherPageStyle"
+            android:windowSoftInputMode="adjustPan|stateHidden|stateVisible"/>
+
+        <!-- 我的资金证明 -->
+        <activity
+            android:name=".offermodule.MyZiJinDataActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/otherPageStyle"
+            android:windowSoftInputMode="adjustPan|stateHidden"/>
+
+        <!-- 视频播放 -->
+        <activity
+            android:name=".housemodule.activity.VideoActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:screenOrientation="fullSensor"
+            android:theme="@style/Theme.AppCompat"/>
+
+        <!-- 注册 -->
+        <activity
+            android:name=".loginmodule.activity.RegisteredPhoneActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/otherPageStyle"
+            android:windowSoftInputMode="adjustPan|stateHidden"/>
+
+        <!-- 电话区号 -->
+        <activity
+            android:name=".loginmodule.activity.PhoneAreaCodeActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/otherPageStyle"/>
+
+        <!-- 邮箱注册 -->
+        <activity
+            android:name=".loginmodule.activity.RegisteredEmailActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/otherPageStyle"
+            android:windowSoftInputMode="adjustPan|stateHidden"/>
+
+        <!-- 设置密码 -->
+        <activity
+            android:name=".loginmodule.activity.SetPassWordActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/otherPageStyle"
+            android:windowSoftInputMode="adjustPan|stateHidden"/>
+
+        <!-- 测试地图功能 ， 无用 -->
+        <activity android:name=".housemodule.activity.PostRoomMap02Activity"/>
+
+        <!-- 加载PDF文件 -->
+        <activity
+            android:name=".offermodule.ShowPDFActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/NotitleTheme"/>
+        <!--  -->
+        <activity
+            android:name=".myinfomodule.activity.BoardCastActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/NotitleTheme"/>
+
+        <!-- 填写您从Mob开发者后台中得到的Appkey和AppSecret -->
+        <meta-data
+            android:name="Mob-AppKey"
+            android:value="2410eeb2d8df6"/>
+        <meta-data
+            android:name="Mob-AppSecret"
+            android:value="dd987af00efc938ea79841a463bbdd68"/>
+
+        <activity
+            android:name="com.mob.tools.MobUIShell"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:windowSoftInputMode="stateHidden|adjustResize"/>
+        <activity
+            android:name=".myinfomodule.activity.ContractMessageActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/NotitleTheme">
+        </activity>
+        <activity
+            android:name=".housemodule.activity.SubmitRoomForSaleActivity"
+            android:windowSoftInputMode="adjustPan|stateHidden|stateVisible">
+        </activity>
+        <activity
+            android:name=".housemodule.activity.EditRoomForSaleActivity"
+            android:windowSoftInputMode="adjustPan|stateHidden|stateVisible">
+        </activity>
+        <activity android:name=".housemodule.activity.SaleRentFilterActivity">
+        </activity>
+        <activity
+            android:name=".myinfomodule.activity.HouseHistoryLogActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+        </activity>
+        <activity
+            android:name=".myinfomodule.activity.AboutEbuyHouseActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+        </activity>
+        <activity
+            android:name=".myinfomodule.activity.FundCertificateActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+        </activity>
+        <activity
+            android:name=".myinfomodule.activity.NewMyRenttalRomActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+            >
+        </activity>
+
+        <!-- 必选 -->
+        <meta-data
+            android:name="PGYER_APPID"
+            android:value="a74a09fc7b9837df15482c764940f0e3">
+        </meta-data>
+
+        <activity
+            android:name=".mainmodule.activity.HtmlWordActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+        </activity>
+        <!-- 可选 -->
+        <!-- <activity android:name="com.pgyersdk.activity.FeedbackActivity"/> -->
+
+        <activity
+            android:name=".housemodule.activity.PlayActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Translucent">
+        </activity>
+        <activity
+            android:name=".utils.BaseActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/otherPageStyle">
+        </activity>
+        <!-- 查询社交圈 -->
+        <activity
+            android:name=".community.activity.SearchSocailActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+            android:windowSoftInputMode="adjustPan">
+        </activity>
+
+        <!-- // 查询社交圈详情界面 -->
+        <activity
+            android:name=".community.activity.SocailDetailActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+            android:windowSoftInputMode="adjustPan|stateHidden">
+        </activity>
+
+        <!-- 房东填写表单 -->
+        <activity
+            android:name=".community.activity.HomeOwnerFormActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden|stateVisible"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+        </activity>
+
+        <!-- 租户填写表单 -->
+        <activity
+            android:name=".community.activity.LeaseFormActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden|stateVisible"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+        </activity>
+        <activity
+            android:name=".community.activity.DataReviewActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+        </activity>
+        <activity
+            android:name=".community.activity.SocailDetailedActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+        </activity>
+        <activity
+            android:name=".community.activity.SocailFriendActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+        </activity>
+        <activity
+            android:name=".community.activity.InterestFriendActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+        </activity>
+        <activity
+            android:name=".community.activity.InterestTypeActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+        </activity>
+        <activity
+            android:name=".community.activity.AddInterestTypeActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+        </activity>
+        <activity
+            android:name=".community.activity.AddInterestLabelActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+        </activity>
+        <activity
+            android:name=".community.activity.AgainChoseLabelActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+        </activity>
+        <activity
+            android:name=".community.activity.PetNameActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+        </activity>
+        <activity
+            android:name=".community.activity.InterestCircleMessageActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+        </activity>
+        <activity
+            android:name=".community.activity.GroupAnnouncementActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+        </activity>
+        <activity
+            android:name=".community.activity.WatchLabelActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+        </activity>
+        <activity
+            android:name=".community.activity.AddOrDeleteActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+        </activity>
+        <activity
+            android:name=".community.activity.ReviseGroupNameActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+        </activity>
+        <activity
+            android:name=".community.activity.TransferCircleActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+        </activity>
+        <activity
+            android:name=".community.activity.InterestGroupListActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+        </activity>
+        <activity
+            android:name=".community.activity.NewFriendActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+        </activity>
+        <activity
+            android:name=".community.activity.AgreeOrRefuseActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+        </activity>
+        <activity
+            android:name=".community.activity.SendAddFriendActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+        </activity>
+        <activity
+            android:name=".community.activity.PersonalInformationActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+        </activity>
+        <activity
+            android:name=".community.activity.HomeOwnerAddressActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+        </activity>
+        <activity
+            android:name=".community.activity.OtherInformationActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+        </activity>
+        <activity
+            android:name=".community.activity.ReviseNameActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+        </activity>
+        <activity
+            android:name=".community.activity.InfoNameActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+        </activity>
+        <activity
+            android:name=".community.activity.ConstellationActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+        </activity>
+        <activity
+            android:name=".community.activity.SocailListActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+        </activity>
+        <activity
+            android:name=".community.activity.InterestListActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+        </activity>
+        <activity
+            android:name=".community.activity.ReportActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+        </activity>
+        <activity
+            android:name=".community.activity.ReviseFriendActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+        </activity>
+        <activity
+            android:name=".community.chat.ui.activity.ChatActivity"
+            android:configChanges="orientation|keyboardHidden|navigation|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+            android:windowSoftInputMode="stateHidden|adjustResize">
+        </activity>
+        <activity
+            android:name=".community.chat.ui.activity.FullImageActivity"
+            android:configChanges="orientation|keyboardHidden|navigation|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent"
+            android:windowSoftInputMode="stateHidden|adjustPan"/>
+        <activity android:name=".community.activity.ApplyInterestActivity"
+                  android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+            >
+        </activity>
+
+
+
+
+
+
+
+
+    </application>
+
+</manifest>

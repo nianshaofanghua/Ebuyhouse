@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/re_bac"
+    android:layout_width="75dp"
+
+    android:layout_height="wrap_content">
+
+    <ImageView
+
+        android:id="@+id/num_bg"
+        android:layout_width="55dp"
+        android:layout_height="match_parent"
+        android:src="@mipmap/map_icon_ba_red"
+        android:visibility="gone"/>
+
+    <TextView
+        android:gravity="center"
+        android:id="@+id/num_txt"
+        android:layout_width="75dp"
+        android:minHeight="30dp"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+
+        android:text=""
+        android:textColor="#ffffff"
+        android:textStyle="bold"/>
+
+</RelativeLayout>

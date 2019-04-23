@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <!--       -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center_vertical"
+        android:paddingLeft="10dp"
+        android:text="Bedrooms"
+        android:textColor="@color/text_heise"/>
+    <RadioGroup
+        android:id="@+id/filter_radiogroup_beds"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:orientation="horizontal"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp">
+        <RadioButton
+            android:id="@+id/filter_radiogroup_beds00"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:text="Any"
+            android:checked="true"
+            android:tag="-1"
+            style="@style/MyRadioButtonLeft" />
+
+        <RadioButton
+            android:id="@+id/filter_radiogroup_beds01"
+            style="@style/MyRadioButtonCenter"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:tag="1"
+            android:text="1"/>
+
+        <RadioButton
+            android:id="@+id/filter_radiogroup_beds02"
+            style="@style/MyRadioButtonCenter"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:tag="2"
+            android:text="2"/>
+
+        <RadioButton
+            android:id="@+id/filter_radiogroup_beds03"
+            style="@style/MyRadioButtonCenter"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:tag="3"
+            android:text="3"/>
+
+        <RadioButton
+            android:id="@+id/filter_radiogroup_beds04"
+            style="@style/MyRadioButtonCenter"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:tag="4"
+            android:text="4"/>
+
+        <RadioButton
+            android:id="@+id/filter_radiogroup_beds05"
+            style="@style/MyRadioButtonRight"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:tag="5"
+            android:text="5+"/>
+    </RadioGroup>
+
+
+    <!--            -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="Baths"
+        android:textColor="@color/text_heise"
+        android:gravity="center_vertical"
+        android:paddingLeft="10dp"/>
+    <RadioGroup
+        android:id="@+id/filter_radiogroup_baths"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:orientation="horizontal"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp">
+        <RadioButton
+            android:id="@+id/filter_radiogroup_baths00"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:text="Any"
+            android:checked="true"
+            android:tag="-1"
+            style="@style/MyRadioButtonLeft" />
+
+        <RadioButton
+            android:id="@+id/filter_radiogroup_baths01"
+            style="@style/MyRadioButtonCenter"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:tag="1"
+            android:text="1"/>
+
+        <RadioButton
+            android:id="@+id/filter_radiogroup_baths02"
+            style="@style/MyRadioButtonCenter"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:tag="2"
+            android:text="2"/>
+
+        <RadioButton
+            android:id="@+id/filter_radiogroup_baths03"
+            style="@style/MyRadioButtonCenter"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:tag="3"
+            android:text="3"/>
+
+        <RadioButton
+            android:id="@+id/filter_radiogroup_baths04"
+            style="@style/MyRadioButtonCenter"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:tag="4"
+            android:text="4"/>
+        <RadioButton
+            android:id="@+id/filter_radiogroup_baths05"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:text="5+"
+            android:tag="5"
+            style="@style/MyRadioButtonRight"/>
+    </RadioGroup>
+
+
+    <!--           -->
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center_vertical"
+        android:paddingLeft="10dp"
+        android:text="Garages"
+        android:textColor="@color/text_heise"/>
+
+    <RadioGroup
+        android:id="@+id/filter_radiogroup_kitchens"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:orientation="horizontal"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp">
+        <RadioButton
+            android:id="@+id/filter_radiogroup_kitchens00"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:text="Any"
+            android:checked="true"
+            android:tag="-1"
+            style="@style/MyRadioButtonLeft" />
+
+        <RadioButton
+            android:id="@+id/filter_radiogroup_kitchens01"
+            style="@style/MyRadioButtonCenter"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:tag="1"
+            android:text="1"/>
+
+        <RadioButton
+            android:id="@+id/filter_radiogroup_kitchens02"
+            style="@style/MyRadioButtonCenter"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:tag="2"
+            android:text="2"/>
+
+        <RadioButton
+            android:id="@+id/filter_radiogroup_kitchens03"
+            style="@style/MyRadioButtonCenter"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:tag="3"
+            android:text="3"/>
+
+        <RadioButton
+            android:id="@+id/filter_radiogroup_kitchens04"
+            style="@style/MyRadioButtonCenter"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:tag="4"
+            android:text="4"/>
+
+        <RadioButton
+            android:id="@+id/filter_radiogroup_kitchens05"
+            style="@style/MyRadioButtonRight"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:tag="5"
+            android:text="5+"/>
+    </RadioGroup>
+
+</LinearLayout>

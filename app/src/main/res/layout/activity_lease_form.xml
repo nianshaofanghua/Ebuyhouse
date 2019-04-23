@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context="com.yidankeji.cheng.ebuyhouse.community.activity.LeaseFormActivity">
+
+    <FrameLayout
+        android:id="@+id/housetype_yincang"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/text_red"
+        android:visibility="gone"/>
+
+    <include layout="@layout/action_bar_title"/>
+
+    <com.yidankeji.cheng.ebuyhouse.utils.ScrollChangeScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:background="@color/text_little_gray"
+                android:gravity="center_vertical"
+                android:paddingLeft="10dp"
+                android:text="name"/>
+
+            <include layout="@layout/home_owner_layout_name"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:background="@color/text_little_gray"
+                android:gravity="center_vertical"
+                android:paddingLeft="10dp"
+                android:text="Address"/>
+
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="4dp"
+                android:gravity="center_vertical"
+                android:text="Apartment Number"
+                android:textColor="@color/black"/>
+
+            <EditText
+                android:id="@+id/apt_num"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/shape_edit_biankuang"
+                android:gravity="center_vertical"
+                android:inputType="number"
+                android:paddingLeft="10dp"
+                android:singleLine="true"
+                android:textColor="@color/text_heise"
+
+                android:textSize="14sp"/>
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="2dp"
+                android:gravity="center_vertical"
+                android:text="Street Name"
+                android:textColor="@color/black"/>
+
+            <EditText
+                android:id="@+id/et_street_name"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/shape_edit_biankuang"
+                android:gravity="center_vertical"
+                android:paddingLeft="10dp"
+                android:singleLine="true"
+                android:textColor="@color/text_heise"
+
+                android:textSize="14sp"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="80dp"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="3"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="30dp"
+                                android:layout_marginLeft="10dp"
+                                android:gravity="center_vertical"
+                                android:text="City"
+                                android:textColor="@color/black"/>
+
+                            <EditText
+                                android:id="@+id/address_city"
+                                android:layout_width="match_parent"
+                                android:layout_height="30dp"
+                                android:layout_marginBottom="5dp"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginRight="10dp"
+                                android:background="@drawable/shape_edit_biankuang"
+                                android:gravity="center_vertical"
+                                android:paddingLeft="10dp"
+                                android:singleLine="true"
+                                android:textColor="@color/text_heise"
+                                android:textSize="14sp"/>
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="2"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="30dp"
+                                android:layout_marginLeft="10dp"
+                                android:gravity="center_vertical"
+                                android:text="State"
+                                android:textColor="@color/black"/>
+
+                            <TextView
+                                android:id="@+id/tv_state"
+                                android:layout_width="match_parent"
+                                android:layout_height="30dp"
+                                android:layout_marginRight="10dp"
+                                android:background="@drawable/shape_edit_biankuang"
+                                android:drawableRight="@mipmap/jiantou_down"
+                                android:gravity="center|left"
+                                android:maxLines="1"
+                                android:paddingLeft="5dp"
+                                android:paddingRight="3dp"
+                                android:text="NY"
+                                android:textColor="@color/text_gary"
+                                android:textSize="14sp"/>
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <TextView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="2dp"
+                        android:gravity="center_vertical"
+                        android:text="Zip code"
+                        android:textColor="@color/black"
+                        android:visibility="gone"/>
+
+                    <EditText
+                        android:id="@+id/zip_code"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/shape_edit_biankuang"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="10dp"
+                        android:singleLine="true"
+
+                        android:textColor="@color/text_heise"
+
+                        android:textSize="14sp"
+                        android:visibility="gone"/>
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:background="@color/text_little_gray"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="10dp"
+                        android:text="Utility bills or contract rental documents"/>
+
+                    <include layout="@layout/home_owner_layout_pic"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="20dp"
+                        android:background="@color/white"
+                        android:gravity="center"
+                        android:text="Driver License or copy of lease agreement first page only"
+                        android:textColor="#979797"
+                        android:textSize="12dp"/>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="100dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@color/text_little_gray">
+
+
+                        <TextView
+                            android:id="@+id/submit"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:layout_centerInParent="true"
+                            android:layout_marginLeft="24dp"
+                            android:layout_marginRight="24dp"
+                            android:background="@drawable/shape_text_bg_zhutise"
+                            android:gravity="center"
+                            android:text="Submit"
+                            android:textColor="@color/white"/>
+
+                    </RelativeLayout>
+                </LinearLayout>
+
+
+
+
+            </RelativeLayout>
+        </LinearLayout>
+
+    </com.yidankeji.cheng.ebuyhouse.utils.ScrollChangeScrollView>
+
+</LinearLayout>

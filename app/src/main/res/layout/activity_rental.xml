@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <FrameLayout
+        android:id="@+id/rental_yincang"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/zhutise"
+        android:visibility="gone"/>
+    <include layout="@layout/action_bar_title"/>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="Residential Housing"
+        android:textColor="#333333"
+        android:textStyle="bold"
+        android:gravity="center_vertical"
+        android:paddingLeft="10dp"/>
+
+    <TextView
+        android:id="@+id/rental_layout01"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="Flat-share"
+        android:textColor="@color/text_hei"
+        android:gravity="center_vertical"
+        android:paddingLeft="10dp"
+        android:drawableRight="@mipmap/jiantou_right"
+        android:paddingRight="10dp"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/text_hui"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"/>
+
+    <TextView
+        android:id="@+id/rental_layout02"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="The entire rent"
+        android:textColor="@color/text_hei"
+        android:gravity="center_vertical"
+        android:paddingLeft="10dp"
+        android:drawableRight="@mipmap/jiantou_right"
+        android:paddingRight="10dp"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/text_hui"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="Residential Housing"
+        android:textColor="#333333"
+        android:textStyle="bold"
+        android:gravity="center_vertical"
+        android:paddingLeft="10dp"/>
+
+    <TextView
+        android:id="@+id/rental_layout03"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="Office Building"
+        android:textColor="@color/text_hei"
+        android:gravity="center_vertical"
+        android:paddingLeft="10dp"
+        android:drawableRight="@mipmap/jiantou_right"
+        android:paddingRight="10dp"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/text_hui"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"/>
+
+</LinearLayout>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/baise">
+
+    <FrameLayout
+        android:id="@+id/savelist_yincang"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/baise"
+        android:visibility="gone"/>
+    <include layout="@layout/action_bar_title02"/>
+
+    <android.support.design.widget.TabLayout
+        android:id="@+id/savelist_tablayout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        app:tabTextAppearance="@android:style/TextAppearance.Widget.TabWidget"
+        app:tabSelectedTextColor="@color/zhutise"
+        app:tabTextColor="@color/text_hei"
+        app:tabIndicatorColor="@color/zhutise"/>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/savelist_viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+</LinearLayout>

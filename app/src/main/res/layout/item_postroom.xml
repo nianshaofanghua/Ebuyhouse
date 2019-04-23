@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="50dp">
+
+    <TextView
+        android:id="@+id/item_postroom_name"
+        android:layout_width="match_parent"
+        android:layout_height="49dp"
+        android:text="dasda"
+        android:textColor="@color/text_hei"
+        android:gravity="center_vertical"
+        android:paddingLeft="10dp"
+        android:background="@drawable/item_click_bg"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/line_hui"/>
+</LinearLayout>

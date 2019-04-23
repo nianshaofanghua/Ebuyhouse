@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <FrameLayout
+        android:id="@+id/login_yincang"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/baise"
+        android:visibility="gone"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/login_back"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:scaleType="center"
+            android:src="@mipmap/jiantou_left_zhutise"/>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="60dp"
+            android:src="@mipmap/login_icon"/>
+    </RelativeLayout>
+
+    <EditText
+        android:id="@+id/login_zhanghao"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/shape_edit_biankuang"
+        android:hint="Email or phone number"
+        android:paddingLeft="10dp"
+        android:singleLine="true"
+        android:textColor="@color/text_heise"
+        android:textColorHint="@color/text_hei"
+        android:textSize="14sp"/>
+
+    <EditText
+        android:id="@+id/login_mima"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/shape_edit_biankuang"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:paddingLeft="10dp"
+        android:singleLine="true"
+        android:textColor="@color/text_heise"
+        android:textColorHint="@color/text_hei"
+        android:textSize="14sp"/>
+
+    <TextView
+        android:id="@+id/login_submit"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/shape_text_bg_zhutise"
+        android:gravity="center"
+        android:text="Log in"
+        android:textColor="@color/baise"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/login_zhuce"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:textSize="12dp"
+            android:gravity="center_vertical|left"
+            android:maxLines="1"
+            android:text="Sign Up For EBuyHouse"
+            android:textColor="@color/zhutise"/>
+
+        <TextView
+            android:id="@+id/login_forgetpassword"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:textSize="12dp"
+            android:gravity="center_vertical|right"
+            android:text="Forget Password ?"
+            android:textColor="@color/zhutise"/>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:visibility="visible">
+
+        <View
+
+            android:layout_width="0dp"
+            android:layout_height="0.5dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="30dp"
+            android:layout_weight="1"
+            android:background="@color/text_hei"/>
+
+        <TextView
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="or"
+            android:textColor="@color/text_hei"
+            android:visibility="visible"/>
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0.5dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="30dp"
+            android:layout_weight="1"
+            android:background="@color/text_hei"/>
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"/>
+
+    <RelativeLayout
+        android:id="@+id/face_login"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/shape_facebook"
+        android:visibility="visible">
+
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="30dp"
+            android:src="@mipmap/facebook_login"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="Sign up with Facebook"
+            android:textColor="@color/white"
+            android:textSize="12dp"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/google_login"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/shape_google"
+        android:visibility="visible">
+
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="30dp"
+            android:src="@mipmap/google_login"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="Sign up with Google"
+            android:textColor="@color/white"
+            android:textSize="12dp"/>
+    </RelativeLayout>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+</LinearLayout>

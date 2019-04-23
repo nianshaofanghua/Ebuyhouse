@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Features"
+        android:textColor="#333333"
+        android:textSize="20dp"
+        android:padding="10dp"/>
+
+    <!--1-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal"
+        android:background="@color/line_hui">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:text="Status"
+            android:gravity="center_vertical"
+            android:paddingLeft="10dp"
+            android:textColor="@color/text_hei"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:text="For Sale"
+            android:gravity="center_vertical"
+            android:paddingLeft="10dp"
+            android:textColor="@color/text_hei"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:text="Price"
+            android:gravity="center_vertical"
+            android:paddingLeft="10dp"
+            android:textColor="@color/text_hei"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:text="$3527"
+            android:gravity="center_vertical"
+            android:paddingLeft="10dp"
+            android:textColor="@color/text_hei"/>
+    </LinearLayout>
+
+    <!--1-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal"
+        android:background="@color/line_hui">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:text="Price/sqft"
+            android:gravity="center_vertical"
+            android:paddingLeft="10dp"
+            android:textColor="@color/text_hei"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:text="$322"
+            android:gravity="center_vertical"
+            android:paddingLeft="10dp"
+            android:textColor="@color/text_hei"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:text="Days on markets"
+            android:gravity="center_vertical"
+            android:paddingLeft="10dp"
+            android:textColor="@color/text_hei"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:text="1 day"
+            android:gravity="center_vertical"
+            android:paddingLeft="10dp"
+            android:textColor="@color/text_hei"/>
+    </LinearLayout>
+
+    <!--1-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal"
+        android:background="@color/line_hui">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:text="Return rate"
+            android:gravity="center_vertical"
+            android:paddingLeft="10dp"
+            android:textColor="@color/text_hei"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:text="4%"
+            android:gravity="center_vertical"
+            android:paddingLeft="10dp"
+            android:textColor="@color/text_hei"/>
+    </LinearLayout>
+
+
+    <!--dsfdfsdf-->
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Building Info"
+        android:textColor="#333333"
+        android:textSize="20dp"
+        android:padding="10dp"/>
+
+    <!--1-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal"
+        android:background="@color/line_hui">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:text="Property Types"
+            android:gravity="center_vertical"
+            android:paddingLeft="10dp"
+            android:textColor="@color/text_hei"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:text="Multiple Dwelling"
+            android:gravity="center_vertical"
+            android:paddingLeft="10dp"
+            android:textColor="@color/text_hei"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:text="lot sqft"
+            android:gravity="center_vertical"
+            android:paddingLeft="10dp"
+            android:textColor="@color/text_hei"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:text="200+sqft"
+            android:gravity="center_vertical"
+            android:paddingLeft="10dp"
+            android:textColor="@color/text_hei"/>
+    </LinearLayout>
+
+    <!--1-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal"
+        android:background="@color/line_hui">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:text="Year"
+            android:gravity="center_vertical"
+            android:paddingLeft="10dp"
+            android:textColor="@color/text_hei"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:text="10"
+            android:gravity="center_vertical"
+            android:paddingLeft="10dp"
+            android:textColor="@color/text_hei"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:text="living sqft "
+            android:gravity="center_vertical"
+            android:paddingLeft="10dp"
+            android:textColor="@color/text_hei"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:text="300sqft"
+            android:gravity="center_vertical"
+            android:paddingLeft="10dp"
+            android:textColor="@color/text_hei"/>
+    </LinearLayout>
+
+</LinearLayout>

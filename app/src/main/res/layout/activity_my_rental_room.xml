@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:orientation="vertical"
+              android:background="@color/baise">
+
+    <FrameLayout
+        android:id="@+id/myrentalroom_yincang"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/baise"
+        android:visibility="gone"/>
+    <include layout="@layout/action_bar_title02"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/myhouselist_tag_zaixian"
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:textSize="12dp"
+            android:layout_height="match_parent"
+            android:text="Active listings"
+            android:textColor="@color/zhutise"
+            android:gravity="center"
+            android:drawableBottom="@mipmap/line_zhutise"/>
+
+        <TextView
+            android:id="@+id/myhouselist_tag_shenhe"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textSize="12dp"
+            android:text="Pending"
+            android:textColor="@color/text_heise"/>
+
+        <TextView
+            android:id="@+id/myhouselist_tag_xiajia"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="Sold out"
+            android:textColor="@color/text_heise"
+            android:textSize="12dp"/>
+
+        <TextView
+            android:id="@+id/myhouselist_tag_01"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="Bought"
+            android:textColor="@color/text_heise"
+            android:textSize="12dp"/>
+        <TextView
+            android:id="@+id/myhouselist_tag_02"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:text="Sold"
+            android:textSize="12dp"
+            android:textColor="@color/text_heise"
+            android:gravity="center" />
+    </LinearLayout>
+
+    <com.scwang.smartrefresh.layout.SmartRefreshLayout
+        android:id="@+id/myhouselist_refreshlayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/myhouselist_recyclerview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+            <TextView
+                android:id="@+id/myhouselist_nodata"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/no_data"
+                android:textColor="@color/text_hei"
+                android:layout_centerInParent="true"/>
+        </RelativeLayout>
+    </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+</LinearLayout>

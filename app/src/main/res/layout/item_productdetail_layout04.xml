@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/line_hui">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Contact"
+        android:textColor="#333333"
+        android:textSize="20dp"
+        android:padding="10dp"
+        android:background="@color/baise"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/line_hui" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="@color/baise"
+        android:layout_marginBottom="10dp">
+
+        <com.makeramen.roundedimageview.RoundedImageView
+            android:id="@+id/productdetais_touxiang"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:src="@mipmap/bbb01"
+            android:scaleType="fitXY"
+            app:riv_border_width="2dp"
+            app:riv_border_color="@color/baise"
+            app:riv_oval="false"
+            android:layout_marginLeft="20dp" />
+        <TextView
+            android:id="@+id/productdetais_callphone"
+            android:layout_width="wrap_content"
+            android:minWidth="50dp"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/shape_layout_zhutisebiankuang"
+            android:text="Call"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:layout_marginRight="20dp"/>
+
+        <TextView
+            android:id="@+id/productdetais_name"
+            android:layout_width="wrap_content"
+            android:minWidth="50dp"
+            android:layout_height="30dp"
+            android:layout_toLeftOf="@+id/checkavailability_call"
+            android:layout_toRightOf="@+id/checkavailability_touxiang"
+            android:text="Simon"
+            android:paddingLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:textColor="#333333" />
+
+        <TextView
+            android:id="@+id/productdetais_notes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="house-owner"
+            android:textColor="@color/text_hei"
+            android:layout_below="@+id/checkavailability_name"
+            android:layout_toRightOf="@+id/checkavailability_touxiang"
+            android:paddingLeft="10dp"/>
+    </RelativeLayout>
+
+    <EditText
+        android:id="@+id/productdetais_emial"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="30dp"
+        android:hint="Email"
+        android:textColorHint="@color/text_hui"
+        android:textSize="20sp"
+        android:paddingLeft="10dp"
+        android:maxLines="1"
+        android:textColor="@color/text_hei"
+        android:inputType="textEmailAddress"
+        android:background="@drawable/shape_edit_biankuang"/>
+
+    <EditText
+        android:id="@+id/productdetais_myphone"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="10dp"
+        android:hint="Phone"
+        android:textColorHint="@color/text_hui"
+        android:textSize="20sp"
+        android:paddingLeft="10dp"
+        android:maxLines="1"
+        android:textColor="@color/text_hei"
+        android:inputType="phone"
+        android:background="@drawable/shape_edit_biankuang"/>
+
+    <EditText
+        android:id="@+id/productdetais_mynotes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="100dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="10dp"
+        android:hint="Please enter your remarks"
+        android:gravity="start"
+        android:textColorHint="@color/text_hui"
+        android:textSize="14sp"
+        android:paddingLeft="10dp"
+        android:maxLines="1"
+        android:textColor="@color/text_hei"
+        android:background="@drawable/shape_edit_biankuang"/>
+
+    <TextView
+        android:id="@+id/productdetais_submit"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="Send tour request"
+        android:textColor="@color/baise"
+        android:gravity="center"
+        android:background="@color/zhutise"
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"/>
+</LinearLayout>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:id="@+id/submitroom_yincang"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/baise"
+        android:visibility="gone"/>
+    <include layout="@layout/action_bar_title02"/>
+
+   <com.scwang.smartrefresh.layout.SmartRefreshLayout
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       app:srlEnablePureScrollMode="true">
+       <ScrollView
+           android:id="@+id/submit_rentroom_scrollview"
+           android:layout_width="match_parent"
+           android:layout_height="match_parent">
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="match_parent"
+               android:orientation="vertical">
+
+               <!--房屋类型-->
+               <include layout="@layout/filter_layout_properytypes"/>
+
+               <!--房屋价钱-->
+               <include layout="@layout/filter_layout_price"/>
+
+               <!--几室几厅-->
+               <include layout="@layout/filter_layout_selectlayout"/>
+
+               <!--房间面积-->
+               <include layout="@layout/filter_layout_squarefeet"/>
+
+               <!--房屋详情介绍-->
+               <include layout="@layout/filter_layout_comdetails"/>
+
+                <!--相册选择-->
+               <include layout="@layout/filter_layout_xiangce"/>
+
+               <!--联系方式-->
+               <include layout="@layout/filter_layout_lianxi"/>
+
+               <TextView
+                   android:id="@+id/submitroom_rent_submit"
+                   android:layout_width="match_parent"
+                   android:layout_height="40dp"
+                   android:text="submit"
+                   android:textColor="@color/baise"
+                   android:gravity="center"
+                   android:background="@color/zhutise"
+                   android:layout_margin="30dp"/>
+
+           </LinearLayout>
+       </ScrollView>
+   </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+</LinearLayout>

@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.yidankeji.cheng.ebuyhouse.community.activity.PetNameActivity">
+
+
+    <FrameLayout
+        android:id="@+id/housetype_yincang"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/text_red"
+        android:visibility="gone"/>
+
+    <include layout="@layout/action_bar_title"/>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp">
+
+        <ImageView
+            android:id="@+id/iv_chose_pic"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:scaleType="centerCrop"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/xuqiudan_xiangce"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/iv_chose_pic"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:text="Group avatars"
+            android:textColor="@color/text_use_gray"
+            android:textSize="14dp"/>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_marginTop="10dp"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:textColor="@color/text_use_gray"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="60dp"
+            android:layout_marginRight="60dp"
+            android:text="Fill in the group name"
+            android:textSize="14dp"/>
+
+
+        <EditText
+            android:id="@+id/et_name"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="60dp"
+            android:layout_marginRight="60dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/shape_edit_hudu_nosolid_gray"
+            android:drawablePadding="5dp"
+            android:hint=""
+
+            android:maxLines="1"
+            android:paddingLeft="5dp"
+            android:textColor="@color/text_hui"
+            android:textColorHint="@color/text_hui"
+            android:textSize="14sp"/>
+
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_submit"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginRight="24dp"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/shape_text_bg_zhutise"
+        android:gravity="center"
+        android:text="Submit"
+        android:textColor="@color/white"
+        android:textSize="16dp"/>
+
+</LinearLayout>

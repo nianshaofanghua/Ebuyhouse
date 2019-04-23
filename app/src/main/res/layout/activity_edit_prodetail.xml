@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:id="@+id/editprodetail_yincang"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/baise"
+        android:visibility="gone"/>
+    <include layout="@layout/action_bar_title02"/>
+
+
+    <com.yidankeji.cheng.ebuyhouse.utils.CustomScrollow
+        android:id="@+id/editroom_scrollview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <View style="@style/myline_kuan"/>
+
+            <include layout="@layout/filter_layout_properytypes"/>
+
+            <include layout="@layout/filter_property_type_group"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="4dp"
+                android:background="@color/line_hui"/>
+
+            <include layout="@layout/filter_rent_payment"/>
+
+            <View style="@style/myline_kuan"/>
+
+            <View style="@style/myline_kuan"/>
+
+            <ListView
+                android:id="@+id/editroom_listview"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:divider="@color/baise"
+                android:dividerHeight="0dp"
+                android:listSelector="#00000000"/>
+
+            <View style="@style/myline_kuan"/>
+            <!--跳转填写信息-->
+            <include layout="@layout/filter_intent_edit"/>
+
+            <View style="@style/myline_kuan"/>
+            <!--房屋详情介绍-->
+            <include layout="@layout/filter_layout_comdetails"/>
+
+            <!--相册选择-->
+            <include layout="@layout/item_submitroom_picture"/>
+
+            <!--视频拍摄-->
+            <include layout="@layout/item_submitroom_video"/>
+
+            <!--联系方式-->
+            <include layout="@layout/filter_layout_lianxi"/>
+
+            <TextView
+                android:id="@+id/editroom_submit"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_margin="30dp"
+                android:background="@drawable/shape_text_bg_zhutise"
+                android:gravity="center"
+                android:text="Submit"
+                android:textColor="@color/baise"/>
+
+        </LinearLayout>
+    </com.yidankeji.cheng.ebuyhouse.utils.CustomScrollow>
+</LinearLayout>

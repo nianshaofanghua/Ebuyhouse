@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+<TextView
+    android:id="@+id/date"
+    android:text="2018-19919"
+    android:textSize="14dp"
+    android:textColor="#666"
+    android:gravity="center"
+    android:layout_width="match_parent"
+    android:layout_height="30dp"/>
+    <com.yidankeji.cheng.ebuyhouse.myinfomodule.utils.CustomListView
+        android:id="@+id/list_item"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="11dp"
+        android:divider="#f0f0f0"
+        android:dividerHeight="6dp"
+        android:layout_marginRight="11dp"
+        android:layout_height="wrap_content"></com.yidankeji.cheng.ebuyhouse.myinfomodule.utils.CustomListView>
+
+</LinearLayout>

@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+              android:id="@+id/lins"
+    android:background="@color/baise">
+
+    <FrameLayout
+        android:id="@+id/postroom02_yincang"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/baise"
+        android:visibility="gone"/>
+    <include layout="@layout/action_bar_title02"/>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:text="What is the address of this listing?"
+        android:gravity="center"
+        android:textSize="20dp"
+        android:textColor="@color/text_heise"/>
+
+    <EditText
+        android:id="@+id/postroom02_content"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginTop="20dp"
+        android:hint="Address"
+        android:textSize="14sp"
+        android:textColorHint="@color/text_hei"
+        android:textColor="@color/text_heise"
+        android:paddingLeft="10dp"
+        android:singleLine="true"
+        android:background="@drawable/shape_edit_biankuang"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/lin"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/postroom02_city"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/shape_edit_biankuang"
+                android:gravity="center"
+                android:hint="City"
+                android:paddingRight="3dp"
+                android:singleLine="true"
+                android:textColor="@color/text_heise"
+                android:textColorHint="@color/text_hei"
+                android:textSize="14sp"/>
+
+            <TextView
+                android:id="@+id/postroom02_state"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/shape_edit_biankuang"
+                android:drawableRight="@mipmap/jiantou_down"
+                android:gravity="center"
+                android:maxLines="1"
+                android:paddingRight="3dp"
+                android:text="State"
+                android:textColor="@color/text_hei"
+                android:textSize="14sp"/>
+
+            <EditText
+                android:id="@+id/postroom02_code"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/shape_edit_biankuang"
+                android:gravity="center"
+                android:hint="ZIP Code"
+                android:paddingRight="3dp"
+                android:singleLine="true"
+                android:textColor="@color/text_heise"
+                android:textColorHint="@color/text_hei"
+                android:textSize="14sp"/>
+        </LinearLayout>
+
+        <TextView
+
+            android:id="@+id/postroom02_submit"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_below="@+id/lin"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:layout_marginTop="50dp"
+            android:background="@drawable/shape_text_bg_zhutise"
+            android:gravity="center"
+            android:text="Submit"
+            android:textColor="@color/baise"/>
+
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/postroom_recyclerview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/baise"
+            android:visibility="gone"/>
+    </RelativeLayout>
+
+
+</LinearLayout>

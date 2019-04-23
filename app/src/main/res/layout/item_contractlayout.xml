@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/line_color">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/baise">
+        <TextView
+            android:id="@+id/item_contractlayout_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="asdasdavcas"
+            android:textColor="#333333"
+            android:padding="10dp"/>
+        <TextView
+            android:id="@+id/item_contractlayout_time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="dsf"
+            android:textColor="@color/text_hei"
+            android:layout_below="@+id/item_contractlayout_name"
+            android:paddingLeft="10dp"/>
+        <TextView
+            android:id="@+id/item_contractlayout_content01"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="adsfdf"
+            android:textColor="#333333"
+            android:textSize="18sp"
+            android:gravity="center_horizontal"
+            android:layout_below="@+id/item_contractlayout_time"/>
+        <TextView
+            android:id="@+id/item_contractlayout_content02"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="adsfdf"
+            android:textColor="#333333"
+            android:textSize="18sp"
+            android:gravity="center_horizontal"
+            android:layout_below="@+id/item_contractlayout_content01"
+            android:layout_marginBottom="20dp"/>
+
+        <View
+            android:id="@+id/item_contractlayout_line"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/line_color"
+            android:layout_below="@+id/item_contractlayout_content02"/>
+
+        <TextView
+            android:id="@+id/item_contractlayout_viewbut"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:text="View"
+            android:gravity="center"
+            android:background="@drawable/shape_edit_biankuang"
+            android:layout_below="@+id/item_contractlayout_line"
+            android:layout_margin="5dp"
+            android:layout_alignParentRight="true"/>
+
+    </RelativeLayout>
+</LinearLayout>

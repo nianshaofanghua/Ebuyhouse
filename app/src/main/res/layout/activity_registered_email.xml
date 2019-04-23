@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <FrameLayout
+        android:id="@+id/registeremail_yincang"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/baise"
+        android:visibility="gone"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/registeremail_back"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@mipmap/jiantou_left_zhutise"
+            android:scaleType="center"/>
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/login_icon"
+            android:layout_marginTop="60dp"/>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal"
+        android:background="@drawable/shape_edit_biankuang"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="30dp">
+
+        <EditText
+            android:id="@+id/registeremail_email"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="1dp"
+            android:background="@drawable/shape_edit_ba_baise"
+            android:hint="Enter your email address"
+            android:paddingLeft="10dp"
+            android:singleLine="true"
+            android:textColor="@color/text_heise"
+            android:textColorHint="@color/text_hei"
+            android:textSize="14sp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp">
+
+        <EditText
+            android:id="@+id/registeremail_code"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:background="@drawable/shape_edit_biankuang"
+            android:hint="Enter code"
+            android:textSize="14sp"
+            android:paddingLeft="10dp"
+            android:singleLine="true"
+            android:inputType="number"
+            android:textColorHint="@color/text_hei"
+            android:textColor="@color/text_heise"/>
+        <TextView
+            android:id="@+id/registeremail_getcode"
+            android:layout_width="wrap_content"
+            android:minWidth="70dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/shape_layout_zhutisebiankuang"
+            android:text="Code"
+            android:textColor="@color/zhutise"
+            android:gravity="center"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:layout_marginLeft="10dp"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/registeremail_submit"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/shape_text_bg_zhutise"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:text="Continue"
+        android:gravity="center"
+        android:textColor="@color/baise"/>
+
+    <TextView
+        android:id="@+id/registeremail_usephone"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/shape_layout_zhutisebiankuang"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:text="Use your mobile number"
+        android:gravity="center"
+        android:textColor="@color/white"/>
+</LinearLayout>

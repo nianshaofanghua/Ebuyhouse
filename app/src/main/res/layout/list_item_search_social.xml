@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp">
+
+        <ImageView
+            android:id="@+id/pic"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:scaleType="centerCrop"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:src="@mipmap/erro_iamge_fang"/>
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="30dp"
+            android:layout_toRightOf="@+id/pic"
+            android:text="America"
+            android:textColor="@color/black"
+            android:textSize="16dp"/>
+
+        <ImageView
+            android:id="@+id/img_tag"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/pic"
+            android:layout_below="@+id/name"
+            android:scaleType="center"
+            android:src="@mipmap/searchsocail_item_icon"
+            android:layout_width="20dp"
+            android:layout_height="20dp"/>
+        <TextView
+            android:id="@+id/address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/name"
+            android:layout_toRightOf="@+id/img_tag"
+
+            android:text="Atlanta, GA, United States Atlanta,GA, United States"
+            android:textSize="12dp"/>
+    </RelativeLayout>
+</LinearLayout>

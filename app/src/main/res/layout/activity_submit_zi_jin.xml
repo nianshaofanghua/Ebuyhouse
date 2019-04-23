@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/line_hui">
+
+    <FrameLayout
+        android:id="@+id/submitzijin_yincang"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/baise"
+        android:visibility="gone"/>
+    <include layout="@layout/action_bar_title02"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/baise"
+        android:layout_margin="10dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="Amount"
+            android:textColor="@color/text_heise"
+            android:gravity="center_vertical"
+            android:paddingLeft="10dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:orientation="horizontal"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/shape_edit_biankuang">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:text="$"
+                android:gravity="center_vertical"
+                android:paddingLeft="10dp"
+                android:textColor="@color/text_heise"/>
+            <EditText
+                android:id="@+id/submitzijin_edit"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint=""
+                android:background="@drawable/shape_edit_ba_baise"
+                android:inputType="number"
+                android:textColorHint="@color/text_hei"
+                android:paddingLeft="10dp"
+                android:textSize="15sp"
+                android:layout_margin="1dp"/>
+        </LinearLayout>
+
+        <View style="@style/myline_kuan"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="Upload certificate"
+            android:textColor="@color/text_heise"
+            android:gravity="center_vertical"
+            android:paddingLeft="10dp"/>
+
+        <ImageView
+            android:id="@+id/submitzijin_image"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@mipmap/zijin_bg"
+            android:scaleType="fitXY"
+            android:layout_gravity="center_horizontal"/>
+
+        <TextView
+            android:id="@+id/submitzijin_submit"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:text="Submit"
+            android:textColor="@color/baise"
+            android:background="@drawable/shape_text_bg_zhutise"
+            android:gravity="center"
+            android:layout_margin="30dp"/>
+
+    </LinearLayout>
+
+</LinearLayout>

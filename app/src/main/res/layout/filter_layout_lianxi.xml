@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="vertical">
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/line_hui"/>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="bottom"
+            android:paddingBottom="5dp"
+            android:paddingLeft="10dp"
+            android:paddingTop="5dp"
+            android:text=" * "
+            android:textColor="@color/text_red"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="bottom"
+            android:paddingBottom="5dp"
+
+            android:paddingTop="5dp"
+            android:text="Name"
+            android:textColor="@color/text_heise"/>
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/filter_lianxi_name"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/shape_edit_biankuang"
+        android:gravity="center_vertical"
+        android:paddingLeft="10dp"
+        android:singleLine="true"
+        android:textColor="@color/text_heise"
+
+        android:textSize="14sp"/>
+
+    <TextView
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="bottom"
+        android:paddingBottom="5dp"
+        android:paddingLeft="10dp"
+        android:paddingTop="5dp"
+        android:text="Email"
+        android:textColor="@color/text_heise"/>
+
+    <EditText
+        android:id="@+id/filter_lianxi_email"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/shape_edit_biankuang"
+        android:gravity="center_vertical"
+        android:paddingLeft="10dp"
+        android:singleLine="true"
+        android:textColor="@color/text_heise"
+
+        android:textSize="14sp"/>
+
+    <TextView
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="bottom"
+        android:paddingBottom="5dp"
+        android:paddingLeft="10dp"
+        android:paddingTop="5dp"
+        android:text="Phone Number"
+        android:textColor="@color/text_heise"/>
+
+    <EditText
+        android:id="@+id/filter_lianxi_phone"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/shape_edit_biankuang"
+        android:gravity="center_vertical"
+        android:inputType="number"
+        android:paddingLeft="10dp"
+        android:singleLine="true"
+        android:textColor="@color/text_heise"
+        android:textSize="14sp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:text="Code"
+            android:textColor="@color/text_heise"/>
+
+        <EditText
+            android:id="@+id/filter_lianxi_code"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/shape_edit_ba_baise"
+            android:inputType="number"
+            android:textColor="@color/text_heise"/>
+
+        <TextView
+            android:id="@+id/filter_lianxi_getcode"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/shape_layout_zhutisebiankuang"
+            android:gravity="center"
+            android:minWidth="50dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:text="Invitation"
+            android:textColor="@color/zhutise"/>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/line_hui"/>
+
+</LinearLayout>

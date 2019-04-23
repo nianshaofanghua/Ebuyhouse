@@ -1,0 +1,207 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              android:weightSum="1">
+
+
+    <FrameLayout
+        android:id="@+id/alterfragment_yincang"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/zhutise"
+        android:visibility="gone"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@mipmap/aaaaa_bg"
+        android:gravity="center"
+        android:text="Message"
+        android:textColor="@color/baise"
+        android:textSize="20sp"/>
+
+    <!--<LinearLayout-->
+    <!--android:id="@+id/cc01"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:orientation="horizontal">-->
+
+    <!--<RelativeLayout-->
+    <!--android:layout_gravity="center_vertical"-->
+    <!--android:layout_width="55dp"-->
+    <!--android:layout_height="55dp"-->
+    <!--android:layout_margin="10dp">-->
+
+    <!--<ImageView-->
+    <!--android:id="@+id/imageView"-->
+    <!--android:layout_width="50dp"-->
+
+    <!--android:layout_height="50dp"-->
+    <!--android:layout_centerInParent="true"-->
+    <!--android:src="@mipmap/cc01"/>-->
+
+    <!--<TextView-->
+    <!--android:visibility="gone"-->
+    <!--android:id="@+id/boardcast_message_num"-->
+    <!--android:layout_width="25dp"-->
+    <!--android:layout_height="25dp"-->
+    <!--android:layout_alignParentRight="true"-->
+    <!--android:background="@drawable/circle_message_num"-->
+    <!--android:gravity="center"-->
+    <!--android:text="0"-->
+    <!--android:textColor="@color/white"-->
+    <!--android:textSize="12dp"/>-->
+    <!--</RelativeLayout>-->
+
+    <!--<TextView-->
+    <!--android:layout_width="0dp"-->
+    <!--android:layout_height="40dp"-->
+    <!--android:layout_weight="1"-->
+    <!--android:gravity="center_vertical"-->
+    <!--android:layout_gravity="center_vertical"-->
+
+    <!--android:text="Broadcast"-->
+    <!--android:textColor="@color/text_hei"/>-->
+
+    <!--<TextView-->
+    <!--android:id="@+id/boardcast_time"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="40dp"-->
+    <!--android:gravity="center_vertical"-->
+    <!--android:paddingRight="10dp"-->
+
+    <!--android:text="2017-12-7"-->
+    <!--android:textColor="@color/text_hei"-->
+    <!--android:visibility="gone"/>-->
+    <!--</LinearLayout>-->
+
+    <!--<View-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="1dp"-->
+    <!--android:background="@color/line_color"/>-->
+    <!--<LinearLayout-->
+    <!--android:id="@+id/cc02"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:orientation="horizontal">-->
+
+    <!--<RelativeLayout-->
+    <!--android:layout_gravity="center_vertical"-->
+    <!--android:layout_width="55dp"-->
+    <!--android:layout_height="55dp"-->
+    <!--android:layout_margin="10dp">-->
+    <!--<ImageView-->
+    <!--android:layout_centerInParent="true"-->
+    <!--android:layout_width="50dp"-->
+    <!--android:layout_height="50dp"-->
+    <!--android:src="@mipmap/ccc02"-->
+    <!--/>-->
+    <!--<TextView-->
+    <!--android:id="@+id/mymessage_message_num"-->
+    <!--android:visibility="gone"-->
+    <!--android:layout_width="25dp"-->
+    <!--android:layout_height="25dp"-->
+    <!--android:layout_alignParentRight="true"-->
+    <!--android:background="@drawable/circle_message_num"-->
+    <!--android:gravity="center"-->
+    <!--android:text="0"-->
+    <!--android:textColor="@color/white"-->
+    <!--android:textSize="12dp"/>-->
+    <!--</RelativeLayout>-->
+
+
+    <!--<TextView-->
+    <!--android:layout_width="0dp"-->
+    <!--android:layout_height="40dp"-->
+    <!--android:layout_weight="1"-->
+
+    <!--android:gravity="center_vertical"-->
+
+    <!--android:layout_gravity="center_vertical"-->
+    <!--android:text="My Message"-->
+    <!--android:textColor="@color/text_hei" />-->
+
+    <!--<TextView-->
+    <!--android:id="@+id/mymessage_time"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="40dp"-->
+    <!--android:gravity="center_vertical"-->
+    <!--android:paddingRight="10dp"-->
+    <!--android:text="2017-12-7"-->
+    <!--android:textColor="@color/text_hei"-->
+    <!--android:visibility="gone"/>-->
+    <!--</LinearLayout>-->
+    <!--<View-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="1dp"-->
+    <!--android:background="@color/line_color"/>-->
+    <!--<LinearLayout-->
+    <!--android:id="@+id/cc03"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:orientation="horizontal">-->
+
+    <!--<RelativeLayout-->
+    <!--android:layout_gravity="center_vertical"-->
+    <!--android:layout_width="55dp"-->
+    <!--android:layout_height="55dp"-->
+    <!--android:layout_margin="10dp">-->
+
+    <!--<ImageView-->
+    <!--android:layout_centerInParent="true"-->
+
+    <!--android:layout_width="50dp"-->
+    <!--android:layout_height="50dp"-->
+    <!--android:src="@mipmap/cc03"-->
+    <!--/>-->
+    <!--<TextView-->
+    <!--android:visibility="gone"-->
+    <!--android:id="@+id/content_message_num"-->
+    <!--android:layout_width="25dp"-->
+
+    <!--android:layout_height="25dp"-->
+    <!--android:layout_alignParentRight="true"-->
+    <!--android:background="@drawable/circle_message_num"-->
+    <!--android:gravity="center"-->
+    <!--android:text="0"-->
+    <!--android:textColor="@color/white"-->
+    <!--android:textSize="12dp"/>-->
+    <!--</RelativeLayout>-->
+
+
+    <!--<TextView-->
+    <!--android:layout_width="0dp"-->
+    <!--android:layout_height="40dp"-->
+    <!--android:layout_gravity="center_vertical"-->
+    <!--android:layout_weight="1"-->
+    <!--android:gravity="center_vertical"-->
+    <!--android:text="Contract"-->
+    <!--android:textColor="@color/text_hei"/>-->
+
+    <!--<TextView-->
+    <!--android:id="@+id/contaract_time"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="40dp"-->
+    <!--android:gravity="center_vertical"-->
+    <!--android:paddingRight="10dp"-->
+    <!--android:text="2017-12-7"-->
+
+    <!--android:textColor="@color/text_hei"-->
+    <!--android:visibility="gone"/>-->
+    <!--</LinearLayout>-->
+    <!--<View-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="1dp"-->
+    <!--android:background="@color/line_color"/>-->
+
+
+    <com.d.lib.xrv.LRecyclerView
+        android:id="@+id/listview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="@color/line_color"
+        android:dividerHeight="1dp"/>
+
+
+</LinearLayout>

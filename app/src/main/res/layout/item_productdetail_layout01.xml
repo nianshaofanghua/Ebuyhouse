@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/prodetail_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:paddingLeft="10dp"
+            android:textSize="20sp"
+            android:layout_marginTop="10dp"/>
+        <TextView
+            android:id="@+id/prodetail_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text=""
+            android:textColor="@color/text_heise"
+            android:textSize="16sp"/>
+
+        <TextView
+            android:id="@+id/prodetail_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:text=""
+            android:textColor="@color/text_heise"
+            android:textSize="16sp"
+            android:visibility="gone"/>
+    </LinearLayout>
+    <com.yidankeji.cheng.ebuyhouse.utils.DrawableCenterTextView
+        android:visibility="gone"
+        android:id="@+id/productdetais_govideo"
+        android:layout_width="50dp"
+        android:layout_height="match_parent"
+        android:text="Video"
+        android:textColor="@color/text_heise"
+        android:drawableTop="@mipmap/my_video"
+        android:drawablePadding="5dp"
+        android:gravity="center_horizontal"/>
+    <com.yidankeji.cheng.ebuyhouse.utils.DrawableCenterTextView
+        android:id="@+id/productdetais_gomap"
+        android:layout_width="50dp"
+        android:layout_height="match_parent"
+        android:text="Map"
+        android:textColor="@color/text_heise"
+        android:drawableTop="@mipmap/my_map"
+        android:drawablePadding="5dp"
+        android:gravity="center_horizontal" />
+
+</LinearLayout>

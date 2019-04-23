@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="50dp">
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/line_hui"
+        android:layout_marginTop="5dp" />
+
+    <LinearLayout
+        android:id="@+id/filter_layout_squarefeet"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/baise"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Living_sqft"
+            android:textColor="@color/text_heise"
+            android:gravity="center_vertical"
+            android:paddingLeft="10dp"/>
+        <TextView
+            android:id="@+id/filter_text_squarefeet"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:minLines="1"
+            android:textColor="@color/text_hei"
+            android:gravity="right|center_vertical"
+            android:drawableRight="@mipmap/jiantou_down"
+            android:drawablePadding="10dp"
+            android:paddingRight="10dp"/>
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/line_hui"/>
+</LinearLayout>

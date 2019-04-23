@@ -1,0 +1,70 @@
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/filterent_scrollview">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <!--房屋类型-->
+            <include layout="@layout/filter_layout_properytypes"/>
+
+            <!--几室几厅-->
+            <include layout="@layout/filter_layout_selectlayout"/>
+
+            <View style="@style/myline_kuan"
+                android:layout_marginTop="10dp"/>
+
+            <ListView
+                android:id="@+id/filterent_listview"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:divider="@color/line_hui"
+                android:dividerHeight="1dp"/>
+        </LinearLayout>
+    </ScrollView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/baise"
+        android:layout_gravity="bottom">
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/text_hei"/>
+        <TextView
+            android:id="@+id/filte_reset"
+            android:layout_width="70dp"
+            android:layout_height="35dp"
+            android:text="Reset"
+            android:textColor="@color/baise"
+            android:gravity="center"
+            android:background="@drawable/shape_text_bg_zhutise"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"/>
+
+        <TextView
+            android:id="@+id/filter_seach"
+            android:layout_width="70dp"
+            android:layout_height="35dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/shape_text_bg_zhutise"
+            android:gravity="center"
+            android:text="Search"
+            android:textColor="@color/baise"/>
+
+    </RelativeLayout>
+</FrameLayout>
+
+
+

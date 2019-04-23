@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    android:background="@color/text_little_gray"
+    tools:context="com.yidankeji.cheng.ebuyhouse.community.activity.ApplyInterestActivity">
+
+    <FrameLayout
+        android:id="@+id/housetype_yincang"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/text_red"
+        android:visibility="gone"/>
+
+    <include layout="@layout/action_bar_title"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="10dp"
+        android:gravity="center_vertical"
+        android:text="Friends notice"
+        android:textColor="@color/black"/>
+
+
+    <RelativeLayout
+        android:id="@+id/rl"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="@color/white">
+
+        <com.makeramen.roundedimageview.RoundedImageView
+            android:id="@+id/iv_user"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            app:riv_oval="true"
+            android:scaleType="centerCrop"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:src="@mipmap/erro_iamge_fang"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/iv_user"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_name"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_marginTop="10dp"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:text="Adhley"
+                android:textColor="@color/black"
+                android:textSize="14dp"/>
+
+            <TextView
+                android:id="@+id/tv_detail"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_marginBottom="10dp"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:textColor="@color/text_use_gray"
+                android:textSize="14dp"/>
+        </LinearLayout>
+
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:src="@mipmap/jiantou_right"
+            android:visibility="gone"/>
+
+    </RelativeLayout>
+
+    <TextView
+
+        android:layout_marginLeft="10dp"
+        android:gravity="center_vertical"
+        android:textColor="@color/black"
+        android:text="leave a message"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"/>
+
+    <EditText
+        android:id="@+id/et_message"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:layout_alignLeft="@+id/tv_dissolve"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/tv_dissolve"
+        android:layout_marginBottom="40dp"
+        android:background="@color/white"
+        android:gravity="top"
+        android:minHeight="80dp"
+        android:paddingBottom="5dp"
+        android:paddingTop="5dp"/>
+    <TextView
+        android:gravity="center"
+        android:text="Send"
+        android:textSize="16dp"
+        android:textColor="@color/white"
+        android:background="@drawable/shape_text_bg_zhutise"
+        android:id="@+id/tv_send"
+        android:layout_marginRight="24dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"/>
+</LinearLayout>

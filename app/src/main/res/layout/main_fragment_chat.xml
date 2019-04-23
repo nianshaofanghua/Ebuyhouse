@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <FrameLayout
+        android:id="@+id/alterfragment_yincang"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/zhutise"
+        android:visibility="gone"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@mipmap/aaaaa_bg"
+        android:gravity="center"
+        android:text="Community"
+        android:textColor="@color/baise"
+        android:textSize="20sp"/>
+
+    <RelativeLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/text_little_gray"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:orientation="vertical">
+
+
+            <EditText
+                android:id="@+id/et_search"
+                android:layout_width="match_parent"
+
+                android:layout_height="35dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/shape_edit_hudu_white"
+                android:drawableLeft="@mipmap/main_seach_logo"
+                android:drawablePadding="5dp"
+                android:hint="Search"
+                android:imeOptions="actionSearch"
+                android:maxLines="1"
+                android:paddingLeft="5dp"
+                android:textColor="@color/text_hui"
+                android:textColorHint="@color/text_hui"
+                android:textSize="14sp"/>
+
+           <FrameLayout
+               android:layout_width="match_parent"
+               android:layout_height="match_parent">
+               <ListView
+                   android:id="@+id/list"
+                   android:layout_width="match_parent"
+                   android:layout_height="match_parent"
+                   android:layout_marginTop="10dp"
+                   android:divider="@color/text_little_gray"
+                   android:dividerHeight="1dp"/>
+               <com.yidankeji.cheng.ebuyhouse.community.util.SideBar
+                   android:id="@+id/sidrbar"
+                   android:layout_width="30dp"
+                   android:layout_height="match_parent"
+                   android:layout_gravity="right|center" />
+           </FrameLayout>
+        </LinearLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/rl_nothing"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone"
+            >
+
+            <TextView
+                android:id="@+id/tv_hint"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="24dp"
+                android:layout_marginRight="24dp"
+                android:text="@string/community_edit"
+                android:textColor="@color/text_gary"
+                android:textSize="14dp"/>
+
+            <TextView
+                android:id="@+id/tv_application"
+                android:layout_width="120dp"
+                android:layout_height="40dp"
+                android:layout_below="@+id/tv_hint"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/shape_nosolid_red"
+                android:gravity="center"
+                android:text="Application"
+                android:textColor="@color/text_red"/>
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+</LinearLayout>

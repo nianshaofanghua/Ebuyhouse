@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:focusable="true" android:focusableInTouchMode="true"
+    android:background="@color/text_little_gray"
+    tools:context="com.yidankeji.cheng.ebuyhouse.community.activity.AddOrDeleteActivity">
+    <FrameLayout
+        android:id="@+id/housetype_yincang"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/text_red"
+        android:visibility="gone"/>
+
+    <include layout="@layout/action_bar_title"/>
+
+    <EditText
+        android:id="@+id/et_search"
+        android:layout_width="match_parent"
+
+        android:layout_height="35dp"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/shape_edit_hudu_white"
+        android:drawableLeft="@mipmap/main_seach_logo"
+        android:drawablePadding="5dp"
+        android:hint="Search"
+        android:imeOptions="actionSearch"
+        android:maxLines="1"
+        android:paddingLeft="5dp"
+        android:textColor="@color/text_hui"
+        android:textColorHint="@color/text_hui"
+        android:textSize="14sp"/>
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ListView
+            android:layout_marginTop="5dp"
+            android:divider="@color/text_little_gray"
+            android:dividerHeight="1dp"
+            android:id="@+id/friend_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+        <com.yidankeji.cheng.ebuyhouse.community.util.SideBar
+            android:id="@+id/sidrbar"
+            android:layout_width="30dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="right|center" />
+    </FrameLayout>
+
+
+
+
+</LinearLayout>

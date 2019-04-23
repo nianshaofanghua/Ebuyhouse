@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <FrameLayout
+        android:id="@+id/checkavailability_yincang"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/baise"
+        android:visibility="gone"/>
+
+    <include layout="@layout/action_bar_title02"/>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_margin="20dp">
+
+                <com.makeramen.roundedimageview.RoundedImageView
+                    android:id="@+id/checkavailability_touxiang"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:scaleType="fitXY"
+                    android:src="@mipmap/touxiang"
+                    app:riv_border_color="@color/baise"
+                    app:riv_border_width="2dp"/>
+
+                <TextView
+                    android:id="@+id/checkavailability_call"
+                    android:layout_width="wrap_content"
+                    android:layout_height="35dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/shape_layout_zhutisebiankuang"
+                    android:gravity="center"
+                    android:minWidth="50dp"
+                    android:paddingLeft="4dp"
+                    android:paddingRight="4dp"
+                    android:text="Call"
+                    android:textColor="@color/white"/>
+
+                <TextView
+                    android:id="@+id/checkavailability_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@+id/checkavailability_call"
+                    android:layout_toRightOf="@+id/checkavailability_touxiang"
+                    android:minWidth="50dp"
+                    android:paddingLeft="10dp"
+                    android:text=""
+                    android:textColor="@color/text_heise"/>
+            </RelativeLayout>
+
+            <EditText
+                android:id="@+id/checkavailability_emial"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:background="@drawable/shape_edit_biankuang"
+                android:hint="Your Email Address"
+                android:inputType="textEmailAddress"
+                android:maxLines="1"
+                android:paddingLeft="10dp"
+                android:textColor="@color/text_heise"
+                android:textColorHint="@color/text_hei"
+                android:textSize="15sp"/>
+
+            <EditText
+                android:id="@+id/checkavailability_phone"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/shape_edit_biankuang"
+                android:hint="Your Phone Number"
+                android:inputType="phone"
+                android:maxLines="1"
+                android:paddingLeft="10dp"
+                android:textColor="@color/text_heise"
+                android:textColorHint="@color/text_hei"
+                android:textSize="15sp"/>
+
+            <EditText
+                android:id="@+id/checkavailability_notes"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/shape_edit_biankuang"
+                android:gravity="top"
+                android:hint="Please enter your remarks"
+                android:minHeight="100dp"
+                android:paddingLeft="10dp"
+                android:paddingTop="5dp"
+                android:textColor="@color/text_heise"
+                android:textColorHint="@color/text_hui"
+                android:textSize="14sp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/shape_edit_biankuang"
+                android:orientation="vertical">
+
+                <TextView
+
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="10dp"
+                    android:text="Fund certificate"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/line_hui"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="120dp"
+                    android:layout_marginTop="20dp"
+                    android:orientation="horizontal">
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1">
+
+                        <ImageView
+                            android:id="@+id/img_1"
+                            android:layout_width="90dp"
+                            android:layout_height="90dp"
+                            android:layout_centerInParent="true"
+                            android:layout_weight="1"
+                            android:scaleType="centerCrop"
+                            android:src="@mipmap/xuqiudan_xiangce"/>
+
+                        <ImageView
+                            android:id="@+id/item_selectxiangce_delete"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginTop="20dp"
+                            android:scaleType="fitXY"
+                            android:src="@mipmap/xiangce_delete"
+                            android:visibility="gone"/>
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1">
+
+                        <ImageView
+                            android:id="@+id/img_2"
+                            android:layout_width="90dp"
+                            android:layout_height="90dp"
+                            android:layout_centerInParent="true"
+                            android:layout_weight="1"
+                            android:scaleType="centerCrop"
+                            android:src="@mipmap/xuqiudan_xiangce"
+                            android:visibility="gone"/>
+
+                        <ImageView
+                            android:id="@+id/item_selectxiangce_delete01"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginTop="20dp"
+
+                            android:scaleType="fitXY"
+                            android:src="@mipmap/xiangce_delete"
+                            android:visibility="gone"/>
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1">
+
+                        <ImageView
+                            android:id="@+id/img_3"
+                            android:layout_width="90dp"
+                            android:layout_height="90dp"
+                            android:layout_centerInParent="true"
+                            android:layout_weight="1"
+                            android:scaleType="centerCrop"
+                            android:src="@mipmap/xuqiudan_xiangce"
+                            android:visibility="gone"/>
+
+                        <ImageView
+                            android:id="@+id/item_selectxiangce_delete02"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginTop="20dp"
+
+                            android:scaleType="fitXY"
+                            android:src="@mipmap/xiangce_delete"
+                            android:visibility="gone"/>
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_gravity="right"
+                    android:layout_marginRight="30dp"
+                    android:gravity="center_vertical"
+                    android:text="Photo1~3"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:gravity="center"
+                    android:text="Upload funds certificate to get attention"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/checkavailability_submit"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/shape_text_bg_zhutise"
+                android:gravity="center"
+                android:text="Send tour request"
+                android:textColor="@color/baise"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="60dp"/>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
